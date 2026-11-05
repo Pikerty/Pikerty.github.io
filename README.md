@@ -54,3 +54,13 @@ RSS 就是一种订阅方式：用 RSS 阅读器订阅后，博客发了新文�
 - `times-square.jpg` — 纽约时代广场夜景（Pexels）
 - `code-dark.jpg` — 深色代码屏幕（Pexels）
 - `study-desk.jpg` — 深夜书桌（StockCake）
+
+
+## 外网指南
+
+`guide.html` 是常驻页面：外网导航（X、Reddit、YouTube、Discord、SpaceX、Hacker News、NASA、arXiv、GitHub、Stack Overflow、维基百科、Coursera、MIT OCW、可汗学院、BBC、路透社）+ 文化词典（AMA、TL;DR、ELI5、meme、FOMO、GOAT、IMO、OP、NSFW、IRL、DM、LOL/LMAO、sus、vibe、no cap、touch grass、doomscrolling、based，共 18 个词），首页导航和卡片都有入口，卡片标题随 9 种语言切换。
+
+
+## 雅思指南
+
+`ielts.html` 是常驻页面：5.5 分数对照（听力约 18–22/40、阅读学术类约 19–22/40）、听说读写四项练法、每天 20 分钟一周计划、免费资源（British Council LearnEnglish、IELTS Liz、IELTS Simon、剑桥 Write & Improve、BBC Learning English、剑桥官网），首页导航和卡片都有入口，卡片标题随 9 种语言切换。

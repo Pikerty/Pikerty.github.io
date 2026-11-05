@@ -314,3 +314,14 @@ html[data-theme="dark"] .search-panel{background:rgba(0,0,0,.85)}
 .lang-option:hover{background:var(--pill-hover)}
 .lang-option.active{font-weight:700}
 .lang-option .check{width:16px;flex:none;color:var(--link)}
+
+/* ---- Guide page: link cards + slang dictionary ---- */
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0 8px}
+.guide-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--surface)}
+.guide-card h3{font-size:17px;margin:0 0 8px}
+.guide-card h3 a{color:var(--text)}
+.guide-card p{margin:0;font-size:15px;color:var(--muted);line-height:1.65}
+.dict dt{font-weight:700;font-size:17px;margin-top:18px}
+.dict dt:first-child{margin-top:6px}
+.dict dd{margin:6px 0 0;color:var(--muted);line-height:1.7}
+.dict dd em{color:var(--text)}

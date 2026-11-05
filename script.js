@@ -15,7 +15,7 @@
   ];
   var I18N = {
     zh: {
-      'nav.latest': '最新文章', 'nav.archive': '归档', 'nav.about': '关于我',
+      'nav.latest': '最新文章', 'nav.archive': '归档', 'nav.guide': '外网指南', 'nav.ielts': '雅思指南', 'nav.about': '关于我',
       'hero.eyebrow': '博客 · 日常记录', 'hero.title': '把学到的、做过的，慢慢记下来。',
       'hero.subtitle': 'Write it down, in Chinese and in English.',
       'hero.desc': '这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。',
@@ -32,6 +32,10 @@
       'card.travel.desc': '已做了三个场景：办美签、纽约时代广场、洛杉矶机场。要的是真实手机拍摄的感觉，不是影棚精修。',
       'card.ielts.title': '为什么每天只练 20 分钟英语',
       'card.ielts.desc': '目标是雅思 5.5。好久没学英语，四六级也没过，所以先从每天能做完的小目标开始。',
+      'card.guide.title': '外网导航与文化词典：从哪里看、词是什么意思',
+      'card.guide.desc': 'X、Reddit、SpaceX、Hacker News……先知道去哪看，再看懂别人在说什么。',
+      'card.ielts-hub.title': '雅思 5.5 学习指南：从零开始，怎么练四项',
+      'card.ielts-hub.desc': '5.5 要多少分、四项分别怎么练、每天 20 分钟计划和免费资源，我正在用的方法都在这里。',
       'archive.title': '归档', 'archive.sub': '按月份整理，方便回头找。',
       'about.title': '关于 Pikerty',
       'about.desc': '成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。',
@@ -39,7 +43,7 @@
       'theme.dark': '夜间模式', 'theme.light': '浅色模式'
     },
     en: {
-      'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.about': 'About',
+      'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.guide': 'Internet Guide', 'nav.ielts': 'IELTS Guide', 'nav.about': 'About',
       'hero.eyebrow': 'Blog · Everyday Notes', 'hero.title': 'Write down what I learn and what I make, slowly.',
       'hero.subtitle': '用中文，也用英文。',
       'hero.desc': "This is Pikerty's personal blog: IELTS prep, working holiday visas, tech experiments and travel videos — real progress, not perfect results.",
@@ -56,6 +60,10 @@
       'card.travel.desc': 'Three scenes so far: the US visa, Times Square, and LAX. The look I want is a real phone camera — not studio-polished footage.',
       'card.ielts.title': 'Why I only practise English for 20 minutes a day',
       'card.ielts.desc': "The goal is IELTS 5.5. I haven't studied English for a long time and didn't pass CET-4/6, so I started with a small daily goal I can actually finish.",
+      'card.guide.title': 'A Guide to the Foreign Internet & Its Slang: Where to Look, What It Means',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… first know where to look, then understand what people are saying.',
+      'card.ielts-hub.title': 'IELTS 5.5 Study Guide: Starting from Zero, How to Practise All Four Skills',
+      'card.ielts-hub.desc': 'What scores 5.5 needs, how to practise each skill, a 20-minutes-a-day plan and free resources — the methods I’m using.',
       'archive.title': 'Archive', 'archive.sub': 'Grouped by month, so older posts are easy to find.',
       'about.title': 'About Pikerty',
       'about.desc': 'Chengdu Wenli College, Big Data Management and Application, class of 2026. Looking for data analysis / data operations work, and preparing for IELTS 5.5. This blog records the learning and the experiments — mostly for my future self.',
@@ -63,7 +71,7 @@
       'theme.dark': 'Dark Mode', 'theme.light': 'Light Mode'
     },
     es: {
-      'nav.latest': 'Últimos', 'nav.archive': 'Archivo', 'nav.about': 'Sobre mí',
+      'nav.latest': 'Últimos', 'nav.archive': 'Archivo', 'nav.guide': 'Guía de internet', 'nav.ielts': 'Guía IELTS', 'nav.about': 'Sobre mí',
       'hero.eyebrow': 'Blog · Notas diarias', 'hero.title': 'Escribe lo que aprendes y lo que haces, poco a poco.',
       'hero.subtitle': 'Escríbelo en varios idiomas.',
       'hero.desc': 'Este es el blog personal de Pikerty: preparación del IELTS, visado Working Holiday, experimentos de tecnología y vídeos de viajes. Progreso real, no resultados perfectos.',
@@ -80,6 +88,10 @@
       'card.travel.desc': 'Tres escenas hasta ahora: el visado, Times Square y LAX. Quiero el aspecto de una cámara de móvil real, no de estudio.',
       'card.ielts.title': 'Por qué solo practico inglés 20 minutos al día',
       'card.ielts.desc': 'El objetivo es IELTS 5.5. Hace mucho que no estudio inglés y no aprobé el CET-4/6, así que empecé con una meta diaria que sí puedo cumplir.',
+      'card.guide.title': 'Guía de internet y su jerga: dónde mirar y qué significa',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… primero saber dónde mirar y luego entender lo que dice la gente.',
+      'card.ielts-hub.title': 'Guía IELTS 5.5: desde cero, cómo practicar las cuatro destrezas',
+      'card.ielts-hub.desc': 'Qué notas necesita un 5.5, cómo practicar cada destreza, un plan de 20 minutos al día y recursos gratuitos: los métodos que estoy usando.',
       'archive.title': 'Archivo', 'archive.sub': 'Por meses, para encontrar entradas antiguas.',
       'about.title': 'Sobre Pikerty',
       'about.desc': 'Universidad Chengdu Wenli, Gestión y Aplicación de Big Data, promoción de 2026. Busco trabajo en análisis de datos y preparo el IELTS 5.5. Este blog registra el aprendizaje y los experimentos, sobre todo para mi yo futuro.',
@@ -87,7 +99,7 @@
       'theme.dark': 'Modo oscuro', 'theme.light': 'Modo claro'
     },
     ja: {
-      'nav.latest': '最新記事', 'nav.archive': 'アーカイブ', 'nav.about': '私について',
+      'nav.latest': '最新記事', 'nav.archive': 'アーカイブ', 'nav.guide': '海外ネットガイド', 'nav.ielts': 'IELTSガイド', 'nav.about': '私について',
       'hero.eyebrow': 'ブログ・日常の記録', 'hero.title': '学んだこと、やったことを、少しずつ書き留める。',
       'hero.subtitle': 'いろんな言語で書き留める。',
       'hero.desc': 'Pikerty の個人ブログです。IELTS対策、ワーキングホリデー、技術の実験、旅行動画。完璧な成果ではなく、リアルな進み具合を記録します。',
@@ -104,6 +116,10 @@
       'card.travel.desc': '3シーン完成：ビザ申請、タイムズスクエア、LAX。本物のスマホカメラの質感がほしい。スタジオ仕上げではない。',
       'card.ielts.title': 'なぜ1日20分だけ英語を練習するのか',
       'card.ielts.desc': '目標はIELTS 5.5。久しぶりの英語で、CET-4/6にも落ちた。だから毎日続けられる小さな目標から始めた。',
+      'card.guide.title': '海外ネットとスラングのガイド：どこで見るか、何を意味するか',
+      'card.guide.desc': 'X、Reddit、SpaceX、Hacker News……まずどこを見るかを知って、それから人々の言葉を理解する。',
+      'card.ielts-hub.title': 'IELTS 5.5 学習ガイド：ゼロから、4技能をどう練習するか',
+      'card.ielts-hub.desc': '5.5に必要なスコア、4技能の練習法、1日20分プランと無料リソース——私が使っている方法です。',
       'archive.title': 'アーカイブ', 'archive.sub': '月ごとに整理して、過去の記事を探しやすく。',
       'about.title': 'Pikertyについて',
       'about.desc': '成都文理学院、ビッグデータ管理と応用、2026年卒業。データ分析の仕事を探しながら、IELTS 5.5を目指している。このブログは学びと実験の記録。未来の自分のために。',
@@ -111,7 +127,7 @@
       'theme.dark': 'ダークモード', 'theme.light': 'ライトモード'
     },
     yue: {
-      'nav.latest': '最新文章', 'nav.archive': '歸檔', 'nav.about': '關於我',
+      'nav.latest': '最新文章', 'nav.archive': '歸檔', 'nav.guide': '外網指南', 'nav.ielts': '雅思指南', 'nav.about': '關於我',
       'hero.eyebrow': '博客 · 日常記錄', 'hero.title': '將學到嘅、做過嘅，慢慢記低。',
       'hero.subtitle': '用唔同語言寫低佢。',
       'hero.desc': '呢度係 Pikerty 嘅個人博客：考雅思、打工度假簽、技術折騰、旅行片，都係真實嘅進度，唔係完美成品。',
@@ -128,6 +144,10 @@
       'card.travel.desc': '已經做咗三個場景：辦美簽、紐約時代廣場、洛杉磯機場。想要真實手機拍攝嘅感覺，唔係影棚精修。',
       'card.ielts.title': '點解每日只練 20 分鐘英文',
       'card.ielts.desc': '目標係雅思 5.5。好耐冇學英文，四六級都唔合格，所以先由每日做到嘅小目標開始。',
+      'card.guide.title': '外網導航同文化詞典：去邊度睇、啲詞係咩意思',
+      'card.guide.desc': 'X、Reddit、SpaceX、Hacker News……先知去邊度睇，再睇得明人哋講咩。',
+      'card.ielts-hub.title': '雅思 5.5 學習指南：由零開始，四項點練',
+      'card.ielts-hub.desc': '5.5 要幾多分、四項分別點練、每日 20 分鐘計劃同免費資源，我用緊嘅方法都喺呢度。',
       'archive.title': '歸檔', 'archive.sub': '按月份整理，方便搵返。',
       'about.title': '關於 Pikerty',
       'about.desc': '成都文理學院，大數據管理與應用，2026 年畢業。搵緊數據分析 / 數據營運方向嘅工，同時準備緊雅思 5.5。呢個博客用嚟記錄學習同折騰嘅過程，寫畀以後嘅自己睇。',
@@ -135,7 +155,7 @@
       'theme.dark': '夜間模式', 'theme.light': '日間模式'
     },
     ko: {
-      'nav.latest': '최신 글', 'nav.archive': '아카이브', 'nav.about': '소개',
+      'nav.latest': '최신 글', 'nav.archive': '아카이브', 'nav.guide': '해외 인터넷 가이드', 'nav.ielts': 'IELTS 가이드', 'nav.about': '소개',
       'hero.eyebrow': '블로그 · 일상 기록', 'hero.title': '배운 것, 해낸 것을 천천히 기록하기.',
       'hero.subtitle': '여러 언어로 기록하기.',
       'hero.desc': 'Pikerty의 개인 블로그입니다. IELTS 준비, 워킹홀리데이 비자, 기술 실험, 여행 영상 — 완벽한 결과가 아니라 진짜 진행 과정을 기록합니다.',
@@ -152,6 +172,10 @@
       'card.travel.desc': '세 장면 완료: 비자 신청, 타임스퀘어, LAX. 스튜디오가 아닌 진짜 휴대폰 카메라 느낌을 원합니다.',
       'card.ielts.title': '왜 하루 20분만 영어를 연습할까',
       'card.ielts.desc': '목표는 IELTS 5.5. 오랫동안 영어를 공부하지 않았고 CET-4/6에도 떨어졌습니다. 그래서 매일 끝낼 수 있는 작은 목표부터 시작했습니다.',
+      'card.guide.title': '해외 인터넷과 속어 가이드: 어디서 보고, 무슨 뜻인지',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… 먼저 어디서 볼지 알고, 사람들이 무슨 말을 하는지 이해하기.',
+      'card.ielts-hub.title': 'IELTS 5.5 학습 가이드: 처음부터, 네 가지 영역 연습법',
+      'card.ielts-hub.desc': '5.5에 필요한 점수, 각 영역 연습법, 하루 20분 계획과 무료 자료 — 제가 쓰고 있는 방법입니다.',
       'archive.title': '아카이브', 'archive.sub': '월별로 정리해 예전 글을 찾기 쉽게.',
       'about.title': 'Pikerty 소개',
       'about.desc': '청두원리대학, 빅데이터 관리 및 응용, 2026년 졸업. 데이터 분석 일을 찾으면서 IELTS 5.5를 준비하고 있습니다. 이 블로그는 배우고 실험한 과정을 기록합니다. 미래의 저를 위해.',
@@ -159,7 +183,7 @@
       'theme.dark': '다크 모드', 'theme.light': '라이트 모드'
     },
     fr: {
-      'nav.latest': 'Derniers articles', 'nav.archive': 'Archives', 'nav.about': 'À propos',
+      'nav.latest': 'Derniers articles', 'nav.archive': 'Archives', 'nav.guide': 'Guide du web', 'nav.ielts': 'Guide IELTS', 'nav.about': 'À propos',
       'hero.eyebrow': 'Blog · Notes quotidiennes', 'hero.title': "Note, petit à petit, ce que j'apprends et ce que je fais.",
       'hero.subtitle': 'Écris-le en plusieurs langues.',
       'hero.desc': "Voici le blog personnel de Pikerty : préparation à l'IELTS, visa vacances-travail, expériences techniques et vidéos de voyage. Du progrès réel, pas des résultats parfaits.",
@@ -176,6 +200,10 @@
       'card.travel.desc': "Trois scènes pour l'instant : le visa, Times Square et LAX. Je veux l'aspect d'une vraie caméra de téléphone, pas un rendu studio.",
       'card.ielts.title': 'Pourquoi je ne pratique l’anglais que 20 minutes par jour',
       'card.ielts.desc': "L'objectif est IELTS 5.5. Je n'ai pas étudié l'anglais depuis longtemps et j'ai raté le CET-4/6, alors j'ai commencé par un petit objectif quotidien que je peux vraiment tenir.",
+      'card.guide.title': 'Guide du web étranger et de son argot : où regarder, ce que ça veut dire',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… d’abord savoir où regarder, puis comprendre ce que les gens disent.',
+      'card.ielts-hub.title': 'Guide IELTS 5.5 : partir de zéro, comment travailler les quatre compétences',
+      'card.ielts-hub.desc': 'Quelles notes pour un 5.5, comment travailler chaque compétence, un plan de 20 minutes par jour et des ressources gratuites : les méthodes que j’utilise.',
       'archive.title': 'Archives', 'archive.sub': 'Par mois, pour retrouver les anciens articles.',
       'about.title': 'À propos de Pikerty',
       'about.desc': 'Université Chengdu Wenli, gestion et application du Big Data, promotion 2026. Je cherche un poste en analyse de données et je prépare l’IELTS 5.5. Ce blog consigne l’apprentissage et les expériences, surtout pour mon moi futur.',
@@ -183,7 +211,7 @@
       'theme.dark': 'Mode sombre', 'theme.light': 'Mode clair'
     },
     ru: {
-      'nav.latest': 'Последние записи', 'nav.archive': 'Архив', 'nav.about': 'Обо мне',
+      'nav.latest': 'Последние записи', 'nav.archive': 'Архив', 'nav.guide': 'Гид по интернету', 'nav.ielts': 'Гид по IELTS', 'nav.about': 'Обо мне',
       'hero.eyebrow': 'Блог · Ежедневные заметки', 'hero.title': 'Записывай понемногу то, что учишь и делаешь.',
       'hero.subtitle': 'Записывай на разных языках.',
       'hero.desc': 'Это личный блог Pikerty: подготовка к IELTS, виза Working Holiday, технические эксперименты и видео о путешествиях. Настоящий прогресс, а не идеальный результат.',
@@ -200,6 +228,10 @@
       'card.travel.desc': 'Три сцены готовы: виза, Таймс-сквер и LAX. Хочу вид настоящей камеры телефона, а не студийную обработку.',
       'card.ielts.title': 'Почему я занимаюсь английским только 20 минут в день',
       'card.ielts.desc': 'Цель — IELTS 5.5. Я давно не учил английский и не сдал CET-4/6, поэтому начал с маленькой ежедневной цели, которую реально выполнить.',
+      'card.guide.title': 'Гид по зарубежному интернету и его сленгу: где смотреть и что это значит',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… сначала узнай, где смотреть, а потом пойми, о чём говорят люди.',
+      'card.ielts-hub.title': 'Гид по IELTS 5.5: с нуля — как тренировать все четыре навыка',
+      'card.ielts-hub.desc': 'Какие баллы нужны для 5.5, как тренировать каждый навык, план на 20 минут в день и бесплатные ресурсы — методы, которыми пользуюсь я.',
       'archive.title': 'Архив', 'archive.sub': 'По месяцам, чтобы было легко найти старые записи.',
       'about.title': 'О Pikerty',
       'about.desc': 'Чэндуский университет Вэньли, управление и применение больших данных, выпуск 2026 года. Ищу работу в анализе данных и готовлюсь к IELTS 5.5. Этот блог — запись учёбы и экспериментов, в первую очередь для себя будущего.',
@@ -207,7 +239,7 @@
       'theme.dark': 'Тёмная тема', 'theme.light': 'Светлая тема'
     },
     de: {
-      'nav.latest': 'Neueste Beiträge', 'nav.archive': 'Archiv', 'nav.about': 'Über mich',
+      'nav.latest': 'Neueste Beiträge', 'nav.archive': 'Archiv', 'nav.guide': 'Internet-Guide', 'nav.ielts': 'IELTS-Guide', 'nav.about': 'Über mich',
       'hero.eyebrow': 'Blog · Tägliche Notizen', 'hero.title': 'Schreib langsam auf, was du lernst und was du machst.',
       'hero.subtitle': 'Schreib es in vielen Sprachen auf.',
       'hero.desc': 'Das ist Pikertys persönlicher Blog: IELTS-Vorbereitung, Working-Holiday-Visum, Technik-Experimente und Reisevideos. Echter Fortschritt, keine perfekten Ergebnisse.',
@@ -224,6 +256,10 @@
       'card.travel.desc': 'Drei Szenen bisher: Visum, Times Square und LAX. Ich will den Look einer echten Handykamera, kein Studio-Finish.',
       'card.ielts.title': 'Warum ich nur 20 Minuten am Tag Englisch übe',
       'card.ielts.desc': 'Das Ziel ist IELTS 5.5. Ich habe lange kein Englisch gelernt und CET-4/6 nicht bestanden, also habe ich mit einem kleinen täglichen Ziel angefangen, das ich wirklich schaffen kann.',
+      'card.guide.title': 'Guide zum ausländischen Internet und seinem Slang: Wo man hinschaut, was es bedeutet',
+      'card.guide.desc': 'X, Reddit, SpaceX, Hacker News… erst wissen, wo man hinschaut, dann verstehen, was die Leute sagen.',
+      'card.ielts-hub.title': 'IELTS 5.5 Lernguide: Von null an — so übt man alle vier Teile',
+      'card.ielts-hub.desc': 'Welche Punktzahlen 5.5 braucht, wie man jeden Teil übt, ein 20-Minuten-Tagesplan und kostenlose Ressourcen — die Methoden, die ich nutze.',
       'archive.title': 'Archiv', 'archive.sub': 'Nach Monaten geordnet, damit ältere Beiträge leicht zu finden sind.',
       'about.title': 'Über Pikerty',
       'about.desc': 'Chengdu Wenli College, Big-Data-Management und -Anwendung, Abschluss 2026. Ich suche eine Stelle in der Datenanalyse und bereite mich auf IELTS 5.5 vor. Dieser Blog hält Lernen und Experimente fest — vor allem für mein zukünftiges Ich.',
