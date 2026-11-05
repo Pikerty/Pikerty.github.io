@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pikerty — 记录生活与学习</title>
+<meta name="description" content="Pikerty 的双语博客：学习、技术、旅行与日常记录。A bilingual blog by Pikerty: learning, tech, travel and everyday notes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Pikerty</a>
+    <nav class="nav-links">
+      <a href="#latest" data-zh="最新文章" data-en="Latest">最新文章</a>
+      <a href="#about" data-zh="关于我" data-en="About">关于我</a>
+      <a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <button class="lang-btn" id="langBtn" type="button">EN / 中文</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="eyebrow" data-zh="博客 · 日常记录" data-en="Blog · Everyday Notes">博客 · 日常记录</p>
+    <h1><span data-zh="把学到的、做过的，慢慢记下来。" data-en="Write down what I learn and what I make, slowly.">把学到的、做过的，慢慢记下来。</span><span class="en" data-zh="Write it down, in Chinese and in English." data-en="用中文，也用英文。">Write it down, in Chinese and in English.</span></h1>
+    <p data-zh="这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。" data-en="This is Pikerty's personal blog: IELTS prep, working holiday visas, tech experiments and travel videos — real progress, not perfect results.">这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。</p>
+    <div class="cta">
+      <a class="btn" href="#latest" data-zh="开始阅读" data-en="Start Reading">开始阅读</a>
+      <a class="btn ghost" href="#about" data-zh="关于我" data-en="About Me">关于我</a>
+    </div>
+  </section>
+
+  <div class="filters" id="filters">
+    <button class="chip active" type="button" data-filter="all" data-zh="全部" data-en="All">全部</button>
+    <button class="chip" type="button" data-filter="learning" data-zh="学习" data-en="Learning">学习</button>
+    <button class="chip" type="button" data-filter="tech" data-zh="技术" data-en="Tech">技术</button>
+    <button class="chip" type="button" data-filter="travel" data-zh="旅行" data-en="Travel">旅行</button>
+    <button class="chip" type="button" data-filter="life" data-zh="生活" data-en="Life">生活</button>
+  </div>
+
+  <a class="featured" href="posts/ielts-day4.html" data-cat="learning">
+    <span class="tag">Learning · 学习</span>
+    <h2 data-zh="雅思备考 Day 4：餐厅英语，先从点一顿饭开始" data-en="IELTS Day 4: Restaurant English — start by ordering a meal">雅思备考 Day 4：餐厅英语，先从点一顿饭开始</h2>
+    <p data-zh="每天 20 分钟，第 4 天练餐厅词汇和预约对话。不是背单词表，是把一句一句读出来、跟读出来。" data-en="20 minutes a day. Day 4 was restaurant vocabulary and a reservation dialogue — not memorizing a list, but reading and shadowing it aloud.">每天 20 分钟，第 4 天练餐厅词汇和预约对话。不是背单词表，是把一句一句读出来、跟读出来。</p>
+    <span class="meta">2026-11-05 · 5 min</span>
+  </a>
+
+  <h2 class="section-title" id="latest" data-zh="最新文章" data-en="Latest Posts">最新文章</h2>
+  <p class="section-sub" data-zh="按时间倒序，先看最新的。" data-en="Newest first.">按时间倒序，先看最新的。</p>
+
+  <div class="grid" id="postGrid">
+    <a class="card" href="posts/whv.html" data-cat="travel">
+      <span class="tag">Travel · 旅行</span>
+      <h3 data-zh="打工度假签怎么选：澳洲 462 vs 新西兰" data-en="Working Holiday Visa: Australia 462 vs New Zealand">打工度假签怎么选：澳洲 462 vs 新西兰</h3>
+      <p data-zh="语言、存款、报名方式完全不一样。澳洲是抽签，新西兰是抢号，2026 年两边都已经满了。" data-en="Language, savings and how to apply are all different. Australia is a ballot, New Zealand is first-come — and both 2026 rounds are already full.">语言、存款、报名方式完全不一样。澳洲是抽签，新西兰是抢号，2026 年两边都已经满了。</p>
+      <span class="meta">2026-11-05 · 6 min</span>
+    </a>
+
+    <a class="card" href="posts/ai-romance.html" data-cat="tech">
+      <span class="tag">Tech · 技术</span>
+      <h3 data-zh="把 AI 恋爱伴侣部署到 Render：免费路线走通了，也卡住了" data-en="Deploying AI Romance to Render: the free route worked — and got stuck">把 AI 恋爱伴侣部署到 Render：免费路线走通了，也卡住了</h3>
+      <p data-zh="从 Railway 到 Render，从 Gemini 到 Groq + OpenRouter。部署成功了，聊天还没通，卡在免费模型的密钥上。" data-en="From Railway to Render, from Gemini to Groq + OpenRouter. Deployment succeeded, but chat still doesn't work — stuck on a free-model API key.">从 Railway 到 Render，从 Gemini 到 Groq + OpenRouter。部署成功了，聊天还没通，卡在免费模型的密钥上。</p>
+      <span class="meta">2026-11-03 · 5 min</span>
+    </a>
+
+    <a class="card" href="posts/travel-video.html" data-cat="life">
+      <span class="tag">Life · 生活</span>
+      <h3 data-zh="第一人称美国旅行视频：从办美签开始" data-en="First-Person US Travel Videos: Starting with the Visa">第一人称美国旅行视频：从办美签开始</h3>
+      <p data-zh="已做了三个场景：办美签、纽约时代广场、洛杉矶机场。要的是真实手机拍摄的感觉，不是影棚精修。" data-en="Three scenes so far: the US visa, Times Square, and LAX. The look I want is a real phone camera — not studio-polished footage.">已做了三个场景：办美签、纽约时代广场、洛杉矶机场。要的是真实手机拍摄的感觉，不是影棚精修。</p>
+      <span class="meta">2026-11-04 · 4 min</span>
+    </a>
+
+    <a class="card" href="posts/ielts-day4.html" data-cat="learning">
+      <span class="tag">Learning · 学习</span>
+      <h3 data-zh="为什么每天只练 20 分钟英语" data-en="Why I only practise English for 20 minutes a day">为什么每天只练 20 分钟英语</h3>
+      <p data-zh="目标是雅思 5.5。好久没学英语，四六级也没过，所以先从每天能做完的小目标开始。" data-en="The goal is IELTS 5.5. I haven't studied English for a long time and didn't pass CET-4/6, so I started with a small daily goal I can actually finish.">目标是雅思 5.5。好久没学英语，四六级也没过，所以先从每天能做完的小目标开始。</p>
+      <span class="meta">2026-11-05 · 3 min</span>
+    </a>
+  </div>
+
+  <section class="about" id="about">
+    <div class="avatar">P</div>
+    <div>
+      <h2 data-zh="关于 Pikerty" data-en="About Pikerty">关于 Pikerty</h2>
+      <p data-zh="成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。" data-en="Chengdu Wenli College, Big Data Management and Application, class of 2026. Looking for data analysis / data operations work, and preparing for IELTS 5.5. This blog records the learning and the experiments — mostly for my future self.">成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。</p>
+      <p style="margin-top:12px"><a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 Pikerty</span>
+    <span data-zh="用 GitHub Pages 搭建 · 苹果风" data-en="Built with GitHub Pages · Apple-inspired">用 GitHub Pages 搭建 · 苹果风</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
