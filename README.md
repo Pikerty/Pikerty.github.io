@@ -31,3 +31,11 @@ X / Telegram / YouTube / Instagram / LinkedIn 目前先用 `Pikerty` 占位，
 2. Change the title, body, date and category.
 3. Add a card for it in `index.html`.
 4. Push to `main` — GitHub Pages updates in a few minutes.
+
+## 海报图片
+
+`assets/` 里的图片都存在仓库里，不是外链：
+- `hero-mountain.jpg` — 深夜山月海报（WallpaperCave）
+- `times-square.jpg` — 纽约时代广场夜景（Pexels）
+- `code-dark.jpg` — 深色代码屏幕（Pexels）
+- `study-desk.jpg` — 深夜书桌（StockCake）

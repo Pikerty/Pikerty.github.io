@@ -5,6 +5,13 @@
   var themeBtn = document.getElementById('themeBtn');
   function setTheme(t) {
     document.documentElement.setAttribute('data-theme', t);
+    // Crossfade: every element fades its colours together for 650ms,
+    // so no pill/button is left looking un-converted.
+    document.documentElement.classList.add('theme-anim');
+    clearTimeout(setTheme._timer);
+    setTheme._timer = setTimeout(function () {
+      document.documentElement.classList.remove('theme-anim');
+    }, 650);
     try { localStorage.setItem('pikerty-theme', t); } catch (e) {}
     if (themeBtn) themeBtn.textContent = t === 'dark' ? '浅色模式' : '夜间模式';
   }
@@ -37,6 +44,26 @@
     apply(current === 'zh' ? 'en' : 'zh');
   });
   apply(current);
+
+  // --- Top search: magnifier in the nav opens a panel under it ---
+  var searchToggle = document.getElementById('searchToggle');
+  var searchPanel = document.getElementById('searchPanel');
+  var searchClose = document.getElementById('searchClose');
+  function setSearch(open) {
+    if (!searchPanel) return;
+    searchPanel.hidden = !open;
+    if (open) {
+      var inp = document.getElementById('searchInput');
+      if (inp) inp.focus();
+    }
+  }
+  if (searchToggle) searchToggle.addEventListener('click', function () {
+    setSearch(!searchPanel || searchPanel.hidden);
+  });
+  if (searchClose) searchClose.addEventListener('click', function () { setSearch(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setSearch(false);
+  });
 
   // --- Search + category filter (homepage) ---
   var searchInput = document.getElementById('searchInput');
