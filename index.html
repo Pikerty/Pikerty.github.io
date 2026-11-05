@@ -22,6 +22,7 @@
       <a href="#about" data-i18n="nav.about">关于我</a>
       <a href="guide.html" data-i18n="nav.guide">外网指南</a>
       <a href="ielts.html" data-i18n="nav.ielts">考试指南</a>
+      <a href="#research" data-i18n="nav.research">前沿科研</a>
     </nav>
     <button class="icon-btn" id="searchToggle" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
     <button class="lang-btn" id="themeBtn" type="button" aria-label="切换夜间模式">夜间模式</button>
@@ -60,6 +61,7 @@
 <main class="wrap">
   <section class="hero">
     <div class="hero-media"><img src="assets/hero-mountain.jpg" alt="深夜山月海报：雪山与松林"></div>
+    <p class="today" id="todayDate"></p>
     <p class="eyebrow" data-i18n="hero.eyebrow">博客 · 日常记录</p>
     <h1><span data-i18n="hero.title">把学到的、做过的，慢慢记下来。</span><span class="en" data-i18n="hero.subtitle">Write it down, in Chinese and in English.</span></h1>
     <p data-i18n="hero.desc">这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。</p>
@@ -137,6 +139,95 @@
       <p data-i18n="card.ielts.desc">目标是雅思 5.5。好久没学英语，四六级也没过，所以先从每天能做完的小目标开始。</p>
       <span class="meta">2026-11-05 · 3 min</span>
     </a>
+  </div>
+
+
+  <h2 class="section-title" id="research" data-i18n="research.title">前沿科研</h2>
+  <p class="section-sub" data-i18n="research.sub">来自 Nature、Science 等期刊的最新研究，按领域分，点击卡片直接读原文。</p>
+  <div class="filters" id="researchFilters">
+    <button class="chip active" type="button" data-rfilter="all" data-i18n="research.all">全部</button>
+    <button class="chip" type="button" data-rfilter="space" data-i18n="research.space">太空天文</button>
+    <button class="chip" type="button" data-rfilter="ai" data-i18n="research.ai">人工智能</button>
+    <button class="chip" type="button" data-rfilter="bio" data-i18n="research.bio">生物医学</button>
+    <button class="chip" type="button" data-rfilter="climate" data-i18n="research.climate">气候环境</button>
+  </div>
+  <div class="grid" id="researchGrid">
+    <a class="card" href="https://www.nature.com/articles/s41586-026-10724-z" target="_blank" rel="noopener" data-rfield="space">
+      <span class="tag">Nature · 太空天文</span>
+      <h3>垂死恒星如何把生命元素送回太空</h3>
+      <p>Numerous bow shocks in the outer Helix Nebula — 螺旋星云外围的冲击波，揭示了恒星死亡时物质如何回到星际空间。</p>
+      <span class="meta">Nature · 2026-08-13 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s41550-026-02939-x" target="_blank" rel="noopener" data-rfield="space">
+      <span class="tag">Nature Astronomy · 太空天文</span>
+      <h3>黑洞“喷流”搅动 30 万光年外的气体</h3>
+      <p>Vigorous turbulence driven by quasar-mode feedback in a cluster core — 类星体反馈产生的湍流比之前估计的强约 100 倍。</p>
+      <span class="meta">Nature Astronomy · 2026-07-28 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://www.nature.com/articles/d41586-026-03154-4" target="_blank" rel="noopener" data-rfield="space">
+      <span class="tag">Nature · 太空天文</span>
+      <h3>阿联酋完成阿拉伯世界首个独立太空探测器</h3>
+      <p>UAE completes Arab world’s first solo space probe — 探测器预计 2035 年飞抵小行星 Justicia。</p>
+      <span class="meta">Nature · 2026-10-08 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://www.eurekalert.org/news-releases/1116699" target="_blank" rel="noopener" data-rfield="ai">
+      <span class="tag">Science · 人工智能</span>
+      <h3>一种引导 AI 输出的新方法：能调控，也暴露了弱点</h3>
+      <p>Toward universal steering and monitoring of AI models — 通过操控大语言模型内部的概念来引导输出，发表于 Science。</p>
+      <span class="meta">Science · 2026-02-19 · 报道 ↗</span>
+    </a>
+    <a class="card" href="https://news.stanford.edu/stories/2026/09/spin-glass-memory-ai-research" target="_blank" rel="noopener" data-rfield="ai">
+      <span class="tag">Science · 人工智能</span>
+      <h3>物理学新突破：让 AI 记得更多、学得更好</h3>
+      <p>一种由原子和光子构成的量子光学自旋玻璃，让简单 AI 系统的记忆容量超过同等规模的传统网络。</p>
+      <span class="meta">Science · 2026-09-11 · 报道 ↗</span>
+    </a>
+    <a class="card" href="https://techxplore.com/news/2026-10-ai-framework-thirds-tripling-success.html" target="_blank" rel="noopener" data-rfield="ai">
+      <span class="tag">arXiv · 人工智能</span>
+      <h3>AI 框架让算力省三分之二，任务成功率翻三倍</h3>
+      <p>Selective Critique for Cost-Aware LLM Agents — 让 AI 助手处理复杂长任务时更省算力、成功率从 24.6% 升到 78.3%。</p>
+      <span class="meta">arXiv · 2026-10-26 · 报道 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s41586-026-11206-y" target="_blank" rel="noopener" data-rfield="bio">
+      <span class="tag">Nature · 生物医学</span>
+      <h3>迄今最大规模阿尔茨海默病遗传学研究</h3>
+      <p>Alzheimer’s disease genetics converges on microglial and neuronal dysregulation — 发现 127 个与患病风险相关的 DNA 区域，其中 48 个是首次发现。</p>
+      <span class="meta">Nature · 2026-10-28 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s43587-026-01204-0" target="_blank" rel="noopener" data-rfield="bio">
+      <span class="tag">Nature Aging · 生物医学</span>
+      <h3>大脑防线的一个弱点，或能解释阿尔茨海默病</h3>
+      <p>Fibronectin mediates APOE4-driven blood–brain barrier dysfunction in Alzheimer’s disease — 过量的纤连蛋白会让血脑屏障渗漏。</p>
+      <span class="meta">Nature Aging · 2026-09-11 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s41593-026-02267-3" target="_blank" rel="noopener" data-rfield="bio">
+      <span class="tag">Nature Neuroscience · 生物医学</span>
+      <h3>新技术在阿尔茨海默病大脑里发现未知免疫细胞群</h3>
+      <p>Spatial proteomic analysis in human Alzheimer’s disease brains — 一次看清 30 多种蛋白标记，发现聚集在淀粉样斑块附近的特殊小胶质细胞。</p>
+      <span class="meta">Nature Neuroscience · 2026-05-20 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://www.nature.com/articles/s41586-026-10607-3" target="_blank" rel="noopener" data-rfield="climate">
+      <span class="tag">Nature · 气候环境</span>
+      <h3>临时碳移除到底有没有用？北大团队给出科学标尺</h3>
+      <p>北京大学团队在 Nature 发表研究，建立框架判断临时碳储存能带来多少真实气候效益，提出“抵消比”新指标。</p>
+      <span class="meta">Nature · 2026-06-16 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://www.nature.com/articles/s41612-026-01563-w" target="_blank" rel="noopener" data-rfield="climate">
+      <span class="tag">npj Climate · 气候环境</span>
+      <h3>热带海洋正在加速北极变暖</h3>
+      <p>Tropical Indo-western Pacific forcing expedites warming in the northern Canadian–Greenland Arctic — 热带印度-西太平洋的暖水通过遥相关放大了北极变暖。</p>
+      <span class="meta">npj Climate and Atmospheric Science · 2026-10-10 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://www.nature.com/articles/s41467-026-78279-1" target="_blank" rel="noopener" data-rfield="climate">
+      <span class="tag">Nature Communications · 气候环境</span>
+      <h3>珊瑚礁海洋热浪可以提前数年预测</h3>
+      <p>Marine heat waves in vulnerable coral reef regions are skillfully predictable on multi-year timescales — 频率和强度在多个海区可提前数月到数年预测。</p>
+      <span class="meta">Nature Communications · 2026-10-27 · 原文 ↗</span>
+    </a>
+  </div>
+  <div class="research-more">
+    <a class="btn ghost" id="researchMore" href="https://www.nature.com/search?q=astronomy" target="_blank" rel="noopener"><span data-i18n="research.more">浏览更多</span> →</a>
+    <span class="research-more-note">Nature · Science 官网</span>
   </div>
 
   <h2 class="section-title" id="archive" data-i18n="archive.title">归档</h2>

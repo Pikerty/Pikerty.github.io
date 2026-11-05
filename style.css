@@ -340,3 +340,8 @@ html[data-theme="dark"] .search-panel{background:rgba(0,0,0,.85)}
 .score-table th,.score-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
 .score-table th{background:var(--surface);font-weight:700}
 .score-table td a{color:var(--link)}
+
+/* ---- Today date + research section ---- */
+.today{color:var(--muted);font-size:15px;margin:0 0 10px}
+.research-more{display:flex;align-items:center;gap:14px;margin:22px 0 8px;flex-wrap:wrap}
+.research-more-note{color:var(--muted);font-size:14px}

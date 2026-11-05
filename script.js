@@ -15,7 +15,7 @@
   ];
   var I18N = {
     zh: {
-      'nav.latest': '最新文章', 'nav.archive': '归档', 'nav.guide': '外网指南', 'nav.ielts': '考试指南', 'nav.about': '关于我',
+      'nav.latest': '最新文章', 'nav.archive': '归档', 'nav.guide': '外网指南', 'nav.ielts': '考试指南', 'nav.research': '前沿科研', 'nav.about': '关于我',
       'hero.eyebrow': '博客 · 日常记录', 'hero.title': '把学到的、做过的，慢慢记下来。',
       'hero.subtitle': 'Write it down, in Chinese and in English.',
       'hero.desc': '这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。',
@@ -40,10 +40,18 @@
       'about.title': '关于 Pikerty',
       'about.desc': '成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。',
       'search.placeholder': '搜索文章…  Search posts…', 'search.empty': '没有找到相关文章，换个关键词试试。', 'search.engines': '站外搜索：',
+      'research.title': '前沿科研',
+      'research.sub': '来自 Nature、Science 等期刊的最新研究，按领域分，点击卡片直接读原文。',
+      'research.all': '全部',
+      'research.space': '太空天文',
+      'research.ai': '人工智能',
+      'research.bio': '生物医学',
+      'research.climate': '气候环境',
+      'research.more': '浏览更多',
       'theme.dark': '夜间模式', 'theme.light': '浅色模式'
     },
     en: {
-      'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.guide': 'Internet Guide', 'nav.ielts': 'Exam Guide', 'nav.about': 'About',
+      'nav.latest': 'Latest', 'nav.archive': 'Archive', 'nav.guide': 'Internet Guide', 'nav.ielts': 'Exam Guide', 'nav.research': 'Research Frontiers', 'nav.about': 'About',
       'hero.eyebrow': 'Blog · Everyday Notes', 'hero.title': 'Write down what I learn and what I make, slowly.',
       'hero.subtitle': '用中文，也用英文。',
       'hero.desc': "This is Pikerty's personal blog: IELTS prep, working holiday visas, tech experiments and travel videos — real progress, not perfect results.",
@@ -68,10 +76,18 @@
       'about.title': 'About Pikerty',
       'about.desc': 'Chengdu Wenli College, Big Data Management and Application, class of 2026. Looking for data analysis / data operations work, and preparing for IELTS 5.5. This blog records the learning and the experiments — mostly for my future self.',
       'search.placeholder': 'Search posts…', 'search.empty': 'No posts found — try another keyword.', 'search.engines': 'Search the web:',
+      'research.title': 'Research Frontiers',
+      'research.sub': 'Latest research from Nature, Science and more, grouped by field — tap a card to read the original.',
+      'research.all': 'All',
+      'research.space': 'Space & Astronomy',
+      'research.ai': 'Artificial Intelligence',
+      'research.bio': 'Biomedicine',
+      'research.climate': 'Climate & Environment',
+      'research.more': 'Browse more',
       'theme.dark': 'Dark Mode', 'theme.light': 'Light Mode'
     },
     es: {
-      'nav.latest': 'Últimos', 'nav.archive': 'Archivo', 'nav.guide': 'Guía de internet', 'nav.ielts': 'Guía de exámenes', 'nav.about': 'Sobre mí',
+      'nav.latest': 'Últimos', 'nav.archive': 'Archivo', 'nav.guide': 'Guía de internet', 'nav.ielts': 'Guía de exámenes', 'nav.research': 'Fronteras de la ciencia', 'nav.about': 'Sobre mí',
       'hero.eyebrow': 'Blog · Notas diarias', 'hero.title': 'Escribe lo que aprendes y lo que haces, poco a poco.',
       'hero.subtitle': 'Escríbelo en varios idiomas.',
       'hero.desc': 'Este es el blog personal de Pikerty: preparación del IELTS, visado Working Holiday, experimentos de tecnología y vídeos de viajes. Progreso real, no resultados perfectos.',
@@ -96,10 +112,18 @@
       'about.title': 'Sobre Pikerty',
       'about.desc': 'Universidad Chengdu Wenli, Gestión y Aplicación de Big Data, promoción de 2026. Busco trabajo en análisis de datos y preparo el IELTS 5.5. Este blog registra el aprendizaje y los experimentos, sobre todo para mi yo futuro.',
       'search.placeholder': 'Buscar entradas…', 'search.empty': 'No se encontraron entradas. Prueba otra palabra.', 'search.engines': 'Buscar en la web:',
+      'research.title': 'Fronteras de la ciencia',
+      'research.sub': 'Investigación reciente de Nature, Science y más, por campo: toca una tarjeta para leer el original.',
+      'research.all': 'Todo',
+      'research.space': 'Espacio y astronomía',
+      'research.ai': 'Inteligencia artificial',
+      'research.bio': 'Biomedicina',
+      'research.climate': 'Clima y medio ambiente',
+      'research.more': 'Ver más',
       'theme.dark': 'Modo oscuro', 'theme.light': 'Modo claro'
     },
     ja: {
-      'nav.latest': '最新記事', 'nav.archive': 'アーカイブ', 'nav.guide': '海外ネットガイド', 'nav.ielts': '試験ガイド', 'nav.about': '私について',
+      'nav.latest': '最新記事', 'nav.archive': 'アーカイブ', 'nav.guide': '海外ネットガイド', 'nav.ielts': '試験ガイド', 'nav.research': '最先端の研究', 'nav.about': '私について',
       'hero.eyebrow': 'ブログ・日常の記録', 'hero.title': '学んだこと、やったことを、少しずつ書き留める。',
       'hero.subtitle': 'いろんな言語で書き留める。',
       'hero.desc': 'Pikerty の個人ブログです。IELTS対策、ワーキングホリデー、技術の実験、旅行動画。完璧な成果ではなく、リアルな進み具合を記録します。',
@@ -124,10 +148,18 @@
       'about.title': 'Pikertyについて',
       'about.desc': '成都文理学院、ビッグデータ管理と応用、2026年卒業。データ分析の仕事を探しながら、IELTS 5.5を目指している。このブログは学びと実験の記録。未来の自分のために。',
       'search.placeholder': '記事を検索…', 'search.empty': '記事が見つかりませんでした。別の言葉で試してください。', 'search.engines': 'ウェブで検索：',
+      'research.title': '最先端の研究',
+      'research.sub': 'Nature、Science などの最新研究を分野別に。カードをタップして原文を読む。',
+      'research.all': 'すべて',
+      'research.space': '宇宙・天文',
+      'research.ai': '人工知能',
+      'research.bio': '生物医学',
+      'research.climate': '気候・環境',
+      'research.more': 'もっと見る',
       'theme.dark': 'ダークモード', 'theme.light': 'ライトモード'
     },
     yue: {
-      'nav.latest': '最新文章', 'nav.archive': '歸檔', 'nav.guide': '外網指南', 'nav.ielts': '考試指南', 'nav.about': '關於我',
+      'nav.latest': '最新文章', 'nav.archive': '歸檔', 'nav.guide': '外網指南', 'nav.ielts': '考試指南', 'nav.research': '前沿科研', 'nav.about': '關於我',
       'hero.eyebrow': '博客 · 日常記錄', 'hero.title': '將學到嘅、做過嘅，慢慢記低。',
       'hero.subtitle': '用唔同語言寫低佢。',
       'hero.desc': '呢度係 Pikerty 嘅個人博客：考雅思、打工度假簽、技術折騰、旅行片，都係真實嘅進度，唔係完美成品。',
@@ -152,10 +184,18 @@
       'about.title': '關於 Pikerty',
       'about.desc': '成都文理學院，大數據管理與應用，2026 年畢業。搵緊數據分析 / 數據營運方向嘅工，同時準備緊雅思 5.5。呢個博客用嚟記錄學習同折騰嘅過程，寫畀以後嘅自己睇。',
       'search.placeholder': '搜尋文章…', 'search.empty': '搵唔到相關文章，試下另一個關鍵詞。', 'search.engines': '喺網上搜尋：',
+      'research.title': '前沿科研',
+      'research.sub': '嚟自 Nature、Science 等期刊嘅最新研究，按領域分，撳卡片直接睇原文。',
+      'research.all': '全部',
+      'research.space': '太空天文',
+      'research.ai': '人工智能',
+      'research.bio': '生物醫學',
+      'research.climate': '氣候環境',
+      'research.more': '瀏覽更多',
       'theme.dark': '夜間模式', 'theme.light': '日間模式'
     },
     ko: {
-      'nav.latest': '최신 글', 'nav.archive': '아카이브', 'nav.guide': '해외 인터넷 가이드', 'nav.ielts': '시험 가이드', 'nav.about': '소개',
+      'nav.latest': '최신 글', 'nav.archive': '아카이브', 'nav.guide': '해외 인터넷 가이드', 'nav.ielts': '시험 가이드', 'nav.research': '최첨단 연구', 'nav.about': '소개',
       'hero.eyebrow': '블로그 · 일상 기록', 'hero.title': '배운 것, 해낸 것을 천천히 기록하기.',
       'hero.subtitle': '여러 언어로 기록하기.',
       'hero.desc': 'Pikerty의 개인 블로그입니다. IELTS 준비, 워킹홀리데이 비자, 기술 실험, 여행 영상 — 완벽한 결과가 아니라 진짜 진행 과정을 기록합니다.',
@@ -180,10 +220,18 @@
       'about.title': 'Pikerty 소개',
       'about.desc': '청두원리대학, 빅데이터 관리 및 응용, 2026년 졸업. 데이터 분석 일을 찾으면서 IELTS 5.5를 준비하고 있습니다. 이 블로그는 배우고 실험한 과정을 기록합니다. 미래의 저를 위해.',
       'search.placeholder': '글 검색…', 'search.empty': '글을 찾을 수 없습니다. 다른 키워드로 시도해 보세요.', 'search.engines': '웹에서 검색:',
+      'research.title': '최첨단 연구',
+      'research.sub': 'Nature, Science 등 저널의 최신 연구를 분야별로 — 카드를 눌러 원문 읽기.',
+      'research.all': '전체',
+      'research.space': '우주·천문',
+      'research.ai': '인공지능',
+      'research.bio': '생명의학',
+      'research.climate': '기후·환경',
+      'research.more': '더 보기',
       'theme.dark': '다크 모드', 'theme.light': '라이트 모드'
     },
     fr: {
-      'nav.latest': 'Derniers articles', 'nav.archive': 'Archives', 'nav.guide': 'Guide du web', 'nav.ielts': 'Guide des examens', 'nav.about': 'À propos',
+      'nav.latest': 'Derniers articles', 'nav.archive': 'Archives', 'nav.guide': 'Guide du web', 'nav.ielts': 'Guide des examens', 'nav.research': 'Recherche de pointe', 'nav.about': 'À propos',
       'hero.eyebrow': 'Blog · Notes quotidiennes', 'hero.title': "Note, petit à petit, ce que j'apprends et ce que je fais.",
       'hero.subtitle': 'Écris-le en plusieurs langues.',
       'hero.desc': "Voici le blog personnel de Pikerty : préparation à l'IELTS, visa vacances-travail, expériences techniques et vidéos de voyage. Du progrès réel, pas des résultats parfaits.",
@@ -208,10 +256,18 @@
       'about.title': 'À propos de Pikerty',
       'about.desc': 'Université Chengdu Wenli, gestion et application du Big Data, promotion 2026. Je cherche un poste en analyse de données et je prépare l’IELTS 5.5. Ce blog consigne l’apprentissage et les expériences, surtout pour mon moi futur.',
       'search.placeholder': 'Rechercher un article…', 'search.empty': 'Aucun article trouvé. Essaie un autre mot-clé.', 'search.engines': 'Rechercher sur le web :',
+      'research.title': 'Recherche de pointe',
+      'research.sub': 'Les dernières recherches de Nature, Science et plus, par domaine : touchez une carte pour lire l’original.',
+      'research.all': 'Tout',
+      'research.space': 'Espace et astronomie',
+      'research.ai': 'Intelligence artificielle',
+      'research.bio': 'Biomédecine',
+      'research.climate': 'Climat et environnement',
+      'research.more': 'Voir plus',
       'theme.dark': 'Mode sombre', 'theme.light': 'Mode clair'
     },
     ru: {
-      'nav.latest': 'Последние записи', 'nav.archive': 'Архив', 'nav.guide': 'Гид по интернету', 'nav.ielts': 'Гид по экзаменам', 'nav.about': 'Обо мне',
+      'nav.latest': 'Последние записи', 'nav.archive': 'Архив', 'nav.guide': 'Гид по интернету', 'nav.ielts': 'Гид по экзаменам', 'nav.research': 'Передовые исследования', 'nav.about': 'Обо мне',
       'hero.eyebrow': 'Блог · Ежедневные заметки', 'hero.title': 'Записывай понемногу то, что учишь и делаешь.',
       'hero.subtitle': 'Записывай на разных языках.',
       'hero.desc': 'Это личный блог Pikerty: подготовка к IELTS, виза Working Holiday, технические эксперименты и видео о путешествиях. Настоящий прогресс, а не идеальный результат.',
@@ -236,10 +292,18 @@
       'about.title': 'О Pikerty',
       'about.desc': 'Чэндуский университет Вэньли, управление и применение больших данных, выпуск 2026 года. Ищу работу в анализе данных и готовлюсь к IELTS 5.5. Этот блог — запись учёбы и экспериментов, в первую очередь для себя будущего.',
       'search.placeholder': 'Поиск записей…', 'search.empty': 'Ничего не найдено. Попробуйте другое слово.', 'search.engines': 'Поиск в интернете:',
+      'research.title': 'Передовые исследования',
+      'research.sub': 'Новейшие исследования из Nature, Science и других журналов, по областям — нажмите на карточку, чтобы прочитать оригинал.',
+      'research.all': 'Все',
+      'research.space': 'Космос и астрономия',
+      'research.ai': 'Искусственный интеллект',
+      'research.bio': 'Биомедицина',
+      'research.climate': 'Климат и окружающая среда',
+      'research.more': 'Ещё',
       'theme.dark': 'Тёмная тема', 'theme.light': 'Светлая тема'
     },
     de: {
-      'nav.latest': 'Neueste Beiträge', 'nav.archive': 'Archiv', 'nav.guide': 'Internet-Guide', 'nav.ielts': 'Prüfungs-Guide', 'nav.about': 'Über mich',
+      'nav.latest': 'Neueste Beiträge', 'nav.archive': 'Archiv', 'nav.guide': 'Internet-Guide', 'nav.ielts': 'Prüfungs-Guide', 'nav.research': 'Spitzenforschung', 'nav.about': 'Über mich',
       'hero.eyebrow': 'Blog · Tägliche Notizen', 'hero.title': 'Schreib langsam auf, was du lernst und was du machst.',
       'hero.subtitle': 'Schreib es in vielen Sprachen auf.',
       'hero.desc': 'Das ist Pikertys persönlicher Blog: IELTS-Vorbereitung, Working-Holiday-Visum, Technik-Experimente und Reisevideos. Echter Fortschritt, keine perfekten Ergebnisse.',
@@ -264,6 +328,14 @@
       'about.title': 'Über Pikerty',
       'about.desc': 'Chengdu Wenli College, Big-Data-Management und -Anwendung, Abschluss 2026. Ich suche eine Stelle in der Datenanalyse und bereite mich auf IELTS 5.5 vor. Dieser Blog hält Lernen und Experimente fest — vor allem für mein zukünftiges Ich.',
       'search.placeholder': 'Beiträge suchen…', 'search.empty': 'Keine Beiträge gefunden. Versuch ein anderes Stichwort.', 'search.engines': 'Im Web suchen:',
+      'research.title': 'Spitzenforschung',
+      'research.sub': 'Neueste Forschung aus Nature, Science und mehr, nach Bereichen sortiert — Karte antippen, um das Original zu lesen.',
+      'research.all': 'Alle',
+      'research.space': 'Weltraum & Astronomie',
+      'research.ai': 'Künstliche Intelligenz',
+      'research.bio': 'Biomedizin',
+      'research.climate': 'Klima & Umwelt',
+      'research.more': 'Mehr ansehen',
       'theme.dark': 'Dunkelmodus', 'theme.light': 'Hellmodus'
     }
   };
@@ -292,8 +364,26 @@
       var check = b.querySelector('.check');
       if (check) check.textContent = b.getAttribute('data-lang') === currentLang ? '✓' : '';
     });
+    renderToday();
+    if (typeof rMore !== 'undefined' && rMore) {
+      var activeChip = document.querySelector('#researchFilters .chip.active');
+      var moreText2 = rMore.querySelector('[data-i18n="research.more"]');
+      if (activeChip && moreText2) moreText2.textContent = t('research.more') + ' · ' + activeChip.textContent.trim();
+    }
     updateThemeBtn();
     try { localStorage.setItem('pikerty-lang', currentLang); } catch (e) {}
+  }
+  // Today's date, formatted in the current language
+  function renderToday() {
+    var el = document.getElementById('todayDate');
+    if (!el) return;
+    try {
+      el.textContent = new Intl.DateTimeFormat(langMeta(currentLang).htmlLang, {
+        year: 'numeric', month: 'long', day: 'numeric', weekday: 'long'
+      }).format(new Date());
+    } catch (e) {
+      el.textContent = new Date().toLocaleDateString();
+    }
   }
   // Language dropdown (globe icon)
   var langBtn = document.getElementById('langBtn');
@@ -414,6 +504,36 @@
       applyFilters();
     });
   });
+  // --- Research section: filter by field, "browse more" follows the active field ---
+  var rChips = document.querySelectorAll('#researchFilters .chip');
+  var rCards = document.querySelectorAll('[data-rfield]');
+  var rMore = document.getElementById('researchMore');
+  var R_MORE_URLS = {
+    all: 'https://www.nature.com/latest-research',
+    space: 'https://www.nature.com/search?q=astronomy',
+    ai: 'https://www.nature.com/search?q=artificial%20intelligence',
+    bio: 'https://www.nature.com/search?q=medicine',
+    climate: 'https://www.nature.com/search?q=climate%20change'
+  };
+  function applyResearchFilter(field) {
+    rCards.forEach(function (card) {
+      card.style.display = (field === 'all' || card.getAttribute('data-rfield') === field) ? '' : 'none';
+    });
+    if (rMore) {
+      rMore.href = R_MORE_URLS[field] || R_MORE_URLS.all;
+      var label = document.querySelector('#researchFilters .chip[data-rfilter="' + field + '"]');
+      var moreText = rMore.querySelector('[data-i18n="research.more"]');
+      if (moreText && label) moreText.textContent = t('research.more') + ' · ' + label.textContent.trim();
+    }
+  }
+  rChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      rChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      applyResearchFilter(chip.getAttribute('data-rfilter'));
+    });
+  });
+  applyResearchFilter('all');
 
   // --- Scroll reveal (Apple style): 1s slow ease-out, systematic stagger ---
   var revealEls = document.querySelectorAll('.featured, .card, .about, .archive, .section-title, .section-sub, .article h2, .article p, .article ul, .article .note');
