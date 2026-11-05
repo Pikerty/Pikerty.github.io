@@ -13,8 +13,13 @@ Apple 风格的双语个人博客，用 GitHub Pages 搭建。
 
 ## 社交链接
 
-已确认的账号：GitHub（https://github.com/Pikerty）、X（@PikertyLvery，https://x.com/PikertyLvery）、Telegram（Pikerty，https://t.me/Pikerty）。
-YouTube / Instagram / LinkedIn 目前先用 `Pikerty` 占位，拿到真实账号后把 `index.html` 里对应的链接改掉，再推一次就行。
+已确认的账号（首页 About 和页脚都只显示图标，像 Steam 页脚那样）：
+- GitHub：https://github.com/Pikerty
+- X：@PikertyLvery，https://x.com/PikertyLvery
+- Telegram：手机号 +86 19808246285，链接 https://t.me/+8619808246285（点开直接聊这个号码）
+- Instagram：pikertylvery，https://www.instagram.com/pikertylvery
+- Facebook：按名字 Asimer Pikerty 搜，链接是 Facebook 搜索页（没找到直接的主页链接，拿到主页链接后换成直达链接）
+YouTube / LinkedIn 还没给真实账号，先没放图标，拿到账号后加上。
 
 ## 语言
 
