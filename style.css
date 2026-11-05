@@ -325,3 +325,12 @@ html[data-theme="dark"] .search-panel{background:rgba(0,0,0,.85)}
 .dict dt:first-child{margin-top:6px}
 .dict dd{margin:6px 0 0;color:var(--muted);line-height:1.7}
 .dict dd em{color:var(--text)}
+
+/* ---- Search panel: external search engines ---- */
+.search-engines{display:flex;gap:8px;align-items:center;flex-wrap:wrap;max-width:640px;margin:10px auto 0;padding:0 20px 14px;color:var(--muted);font-size:14px}
+.search-engines .engine-btn{
+  padding:6px 14px;border:1px solid var(--pill-border);border-radius:999px;
+  background:var(--pill-bg);color:var(--text);font-size:14px;cursor:pointer;font-family:inherit;
+  transition:background-color .3s var(--ease-out),transform .3s var(--ease-out);
+}
+.search-engines .engine-btn:hover{background:var(--pill-hover);transform:translateY(-1px)}

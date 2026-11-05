@@ -39,7 +39,7 @@
       'archive.title': '归档', 'archive.sub': '按月份整理，方便回头找。',
       'about.title': '关于 Pikerty',
       'about.desc': '成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。',
-      'search.placeholder': '搜索文章…  Search posts…', 'search.empty': '没有找到相关文章，换个关键词试试。',
+      'search.placeholder': '搜索文章…  Search posts…', 'search.empty': '没有找到相关文章，换个关键词试试。', 'search.engines': '站外搜索：',
       'theme.dark': '夜间模式', 'theme.light': '浅色模式'
     },
     en: {
@@ -67,7 +67,7 @@
       'archive.title': 'Archive', 'archive.sub': 'Grouped by month, so older posts are easy to find.',
       'about.title': 'About Pikerty',
       'about.desc': 'Chengdu Wenli College, Big Data Management and Application, class of 2026. Looking for data analysis / data operations work, and preparing for IELTS 5.5. This blog records the learning and the experiments — mostly for my future self.',
-      'search.placeholder': 'Search posts…', 'search.empty': 'No posts found — try another keyword.',
+      'search.placeholder': 'Search posts…', 'search.empty': 'No posts found — try another keyword.', 'search.engines': 'Search the web:',
       'theme.dark': 'Dark Mode', 'theme.light': 'Light Mode'
     },
     es: {
@@ -95,7 +95,7 @@
       'archive.title': 'Archivo', 'archive.sub': 'Por meses, para encontrar entradas antiguas.',
       'about.title': 'Sobre Pikerty',
       'about.desc': 'Universidad Chengdu Wenli, Gestión y Aplicación de Big Data, promoción de 2026. Busco trabajo en análisis de datos y preparo el IELTS 5.5. Este blog registra el aprendizaje y los experimentos, sobre todo para mi yo futuro.',
-      'search.placeholder': 'Buscar entradas…', 'search.empty': 'No se encontraron entradas. Prueba otra palabra.',
+      'search.placeholder': 'Buscar entradas…', 'search.empty': 'No se encontraron entradas. Prueba otra palabra.', 'search.engines': 'Buscar en la web:',
       'theme.dark': 'Modo oscuro', 'theme.light': 'Modo claro'
     },
     ja: {
@@ -123,7 +123,7 @@
       'archive.title': 'アーカイブ', 'archive.sub': '月ごとに整理して、過去の記事を探しやすく。',
       'about.title': 'Pikertyについて',
       'about.desc': '成都文理学院、ビッグデータ管理と応用、2026年卒業。データ分析の仕事を探しながら、IELTS 5.5を目指している。このブログは学びと実験の記録。未来の自分のために。',
-      'search.placeholder': '記事を検索…', 'search.empty': '記事が見つかりませんでした。別の言葉で試してください。',
+      'search.placeholder': '記事を検索…', 'search.empty': '記事が見つかりませんでした。別の言葉で試してください。', 'search.engines': 'ウェブで検索：',
       'theme.dark': 'ダークモード', 'theme.light': 'ライトモード'
     },
     yue: {
@@ -151,7 +151,7 @@
       'archive.title': '歸檔', 'archive.sub': '按月份整理，方便搵返。',
       'about.title': '關於 Pikerty',
       'about.desc': '成都文理學院，大數據管理與應用，2026 年畢業。搵緊數據分析 / 數據營運方向嘅工，同時準備緊雅思 5.5。呢個博客用嚟記錄學習同折騰嘅過程，寫畀以後嘅自己睇。',
-      'search.placeholder': '搜尋文章…', 'search.empty': '搵唔到相關文章，試下另一個關鍵詞。',
+      'search.placeholder': '搜尋文章…', 'search.empty': '搵唔到相關文章，試下另一個關鍵詞。', 'search.engines': '喺網上搜尋：',
       'theme.dark': '夜間模式', 'theme.light': '日間模式'
     },
     ko: {
@@ -179,7 +179,7 @@
       'archive.title': '아카이브', 'archive.sub': '월별로 정리해 예전 글을 찾기 쉽게.',
       'about.title': 'Pikerty 소개',
       'about.desc': '청두원리대학, 빅데이터 관리 및 응용, 2026년 졸업. 데이터 분석 일을 찾으면서 IELTS 5.5를 준비하고 있습니다. 이 블로그는 배우고 실험한 과정을 기록합니다. 미래의 저를 위해.',
-      'search.placeholder': '글 검색…', 'search.empty': '글을 찾을 수 없습니다. 다른 키워드로 시도해 보세요.',
+      'search.placeholder': '글 검색…', 'search.empty': '글을 찾을 수 없습니다. 다른 키워드로 시도해 보세요.', 'search.engines': '웹에서 검색:',
       'theme.dark': '다크 모드', 'theme.light': '라이트 모드'
     },
     fr: {
@@ -207,7 +207,7 @@
       'archive.title': 'Archives', 'archive.sub': 'Par mois, pour retrouver les anciens articles.',
       'about.title': 'À propos de Pikerty',
       'about.desc': 'Université Chengdu Wenli, gestion et application du Big Data, promotion 2026. Je cherche un poste en analyse de données et je prépare l’IELTS 5.5. Ce blog consigne l’apprentissage et les expériences, surtout pour mon moi futur.',
-      'search.placeholder': 'Rechercher un article…', 'search.empty': 'Aucun article trouvé. Essaie un autre mot-clé.',
+      'search.placeholder': 'Rechercher un article…', 'search.empty': 'Aucun article trouvé. Essaie un autre mot-clé.', 'search.engines': 'Rechercher sur le web :',
       'theme.dark': 'Mode sombre', 'theme.light': 'Mode clair'
     },
     ru: {
@@ -235,7 +235,7 @@
       'archive.title': 'Архив', 'archive.sub': 'По месяцам, чтобы было легко найти старые записи.',
       'about.title': 'О Pikerty',
       'about.desc': 'Чэндуский университет Вэньли, управление и применение больших данных, выпуск 2026 года. Ищу работу в анализе данных и готовлюсь к IELTS 5.5. Этот блог — запись учёбы и экспериментов, в первую очередь для себя будущего.',
-      'search.placeholder': 'Поиск записей…', 'search.empty': 'Ничего не найдено. Попробуйте другое слово.',
+      'search.placeholder': 'Поиск записей…', 'search.empty': 'Ничего не найдено. Попробуйте другое слово.', 'search.engines': 'Поиск в интернете:',
       'theme.dark': 'Тёмная тема', 'theme.light': 'Светлая тема'
     },
     de: {
@@ -263,7 +263,7 @@
       'archive.title': 'Archiv', 'archive.sub': 'Nach Monaten geordnet, damit ältere Beiträge leicht zu finden sind.',
       'about.title': 'Über Pikerty',
       'about.desc': 'Chengdu Wenli College, Big-Data-Management und -Anwendung, Abschluss 2026. Ich suche eine Stelle in der Datenanalyse und bereite mich auf IELTS 5.5 vor. Dieser Blog hält Lernen und Experimente fest — vor allem für mein zukünftiges Ich.',
-      'search.placeholder': 'Beiträge suchen…', 'search.empty': 'Keine Beiträge gefunden. Versuch ein anderes Stichwort.',
+      'search.placeholder': 'Beiträge suchen…', 'search.empty': 'Keine Beiträge gefunden. Versuch ein anderes Stichwort.', 'search.engines': 'Im Web suchen:',
       'theme.dark': 'Dunkelmodus', 'theme.light': 'Hellmodus'
     }
   };
@@ -362,6 +362,20 @@
     setSearch(!searchPanel || searchPanel.hidden);
   });
   if (searchClose) searchClose.addEventListener('click', function () { setSearch(false); });
+  // External search engines: type a keyword, tap an engine, open its results in a new tab
+  var ENGINES = {
+    google: 'https://www.google.com/search?q=',
+    bing: 'https://www.bing.com/search?q=',
+    baidu: 'https://www.baidu.com/s?wd=',
+    sohu: 'https://search.sohu.com/?keyword='
+  };
+  document.querySelectorAll('.engine-btn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var q = searchInput ? searchInput.value.trim() : '';
+      var base2 = ENGINES[b.getAttribute('data-engine')] || ENGINES.google;
+      window.open(q ? base2 + encodeURIComponent(q) : base2.replace(/[^/]+$/, ''), '_blank', 'noopener');
+    });
+  });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') setSearch(false);
   });

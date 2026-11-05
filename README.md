@@ -64,3 +64,8 @@ RSS 就是一种订阅方式：用 RSS 阅读器订阅后，博客发了新文�
 ## 雅思指南
 
 `ielts.html` 是常驻页面：5.5 分数对照（听力约 18–22/40、阅读学术类约 19–22/40）、听说读写四项练法、每天 20 分钟一周计划、免费资源（British Council LearnEnglish、IELTS Liz、IELTS Simon、剑桥 Write & Improve、BBC Learning English、剑桥官网），首页导航和卡片都有入口，卡片标题随 9 种语言切换。
+
+
+## 搜索
+
+首页顶部搜索框一边输一边筛站内文章；下面还有站外搜索引擎：Google、Bing、百度、搜狐，输好关键词点一个，就在新标签页打开那个引擎的搜索结果。
