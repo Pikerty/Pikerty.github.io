@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Pikerty — 记录生活与学习</title>
+<link>https://Pikerty.github.io/</link>
+<description>Pikerty 的双语博客：学习、技术、旅行与日常记录。A bilingual blog by Pikerty.</description>
+<language>zh-CN</language>
+<item>
+<title>雅思备考 Day 4：餐厅英语，先从点一顿饭开始</title>
+<link>https://Pikerty.github.io/posts/ielts-day4.html</link>
+<guid>https://Pikerty.github.io/posts/ielts-day4.html</guid>
+<pubDate>Wed, 05 Nov 2026 00:00:00 GMT</pubDate>
+<description>每天 20 分钟，第 4 天练餐厅词汇和预约对话。</description>
+</item>
+<item>
+<title>打工度假签怎么选：澳洲 462 vs 新西兰</title>
+<link>https://Pikerty.github.io/posts/whv.html</link>
+<guid>https://Pikerty.github.io/posts/whv.html</guid>
+<pubDate>Wed, 05 Nov 2026 00:00:00 GMT</pubDate>
+<description>语言、存款、报名方式完全不一样。澳洲是抽签，新西兰是抢号。</description>
+</item>
+<item>
+<title>第一人称美国旅行视频：从办美签开始</title>
+<link>https://Pikerty.github.io/posts/travel-video.html</link>
+<guid>https://Pikerty.github.io/posts/travel-video.html</guid>
+<pubDate>Tue, 04 Nov 2026 00:00:00 GMT</pubDate>
+<description>已做了三个场景：办美签、纽约时代广场、洛杉矶机场。</description>
+</item>
+<item>
+<title>把 AI 恋爱伴侣部署到 Render：免费路线走通了，也卡住了</title>
+<link>https://Pikerty.github.io/posts/ai-romance.html</link>
+<guid>https://Pikerty.github.io/posts/ai-romance.html</guid>
+<pubDate>Mon, 03 Nov 2026 00:00:00 GMT</pubDate>
+<description>从 Railway 到 Render，从 Gemini 到 Groq + OpenRouter。</description>
+</item>
+</channel>
+</rss>

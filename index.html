@@ -6,16 +6,23 @@
 <title>Pikerty — 记录生活与学习</title>
 <meta name="description" content="Pikerty 的双语博客：学习、技术、旅行与日常记录。A bilingual blog by Pikerty: learning, tech, travel and everyday notes.">
 <link rel="stylesheet" href="style.css">
+<script>
+/* Set theme before first paint: saved choice wins, otherwise follow the system. */
+(function(){try{var t=localStorage.getItem('pikerty-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
+<div class="progress" id="progressBar" aria-hidden="true"></div>
 <header class="nav">
   <div class="nav-inner">
     <a class="logo" href="index.html">Pikerty</a>
     <nav class="nav-links">
       <a href="#latest" data-zh="最新文章" data-en="Latest">最新文章</a>
+      <a href="#archive" data-zh="归档" data-en="Archive">归档</a>
       <a href="#about" data-zh="关于我" data-en="About">关于我</a>
-      <a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub</a>
+      <a href="feed.xml">RSS</a>
     </nav>
+    <button class="lang-btn" id="themeBtn" type="button" aria-label="切换夜间模式">夜间模式</button>
     <button class="lang-btn" id="langBtn" type="button">EN / 中文</button>
   </div>
 </header>
@@ -37,6 +44,11 @@
     <button class="chip" type="button" data-filter="tech" data-zh="技术" data-en="Tech">技术</button>
     <button class="chip" type="button" data-filter="travel" data-zh="旅行" data-en="Travel">旅行</button>
     <button class="chip" type="button" data-filter="life" data-zh="生活" data-en="Life">生活</button>
+  </div>
+
+  <div class="search-box">
+    <input id="searchInput" type="search" placeholder="搜索文章…  Search posts…" aria-label="搜索文章">
+    <p class="search-empty" id="searchEmpty" hidden data-zh="没有找到相关文章，换个关键词试试。" data-en="No posts found — try another keyword.">没有找到相关文章，换个关键词试试。</p>
   </div>
 
   <a class="featured" href="posts/ielts-day4.html" data-cat="learning">
@@ -79,12 +91,34 @@
     </a>
   </div>
 
+  <h2 class="section-title" id="archive" data-zh="归档" data-en="Archive">归档</h2>
+  <p class="section-sub" data-zh="按月份整理，方便回头找。" data-en="Grouped by month, so older posts are easy to find.">按月份整理，方便回头找。</p>
+  <div class="archive">
+    <div class="archive-month">2026-11 · 4 篇</div>
+    <ul>
+      <li><span>11-05</span><a href="posts/ielts-day4.html">雅思备考 Day 4：餐厅英语</a></li>
+      <li><span>11-05</span><a href="posts/whv.html">打工度假签怎么选：澳洲 462 vs 新西兰</a></li>
+      <li><span>11-04</span><a href="posts/travel-video.html">第一人称美国旅行视频：从办美签开始</a></li>
+      <li><span>11-03</span><a href="posts/ai-romance.html">把 AI 恋爱伴侣部署到 Render</a></li>
+    </ul>
+    <p class="archive-note"><a href="feed.xml">订阅 RSS →</a></p>
+  </div>
+
   <section class="about" id="about">
     <div class="avatar">P</div>
     <div>
       <h2 data-zh="关于 Pikerty" data-en="About Pikerty">关于 Pikerty</h2>
       <p data-zh="成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。" data-en="Chengdu Wenli College, Big Data Management and Application, class of 2026. Looking for data analysis / data operations work, and preparing for IELTS 5.5. This blog records the learning and the experiments — mostly for my future self.">成都文理学院，大数据管理与应用，2026 年毕业。正在找数据分析 / 数据运营方向的工作，也在准备雅思 5.5。这个博客用来记录学习和折腾的过程，写给以后的自己看。</p>
-      <p style="margin-top:12px"><a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub →</a></p>
+      <!-- 社交链接：GitHub 是已确认的账号；X / Telegram / YouTube / Instagram / LinkedIn
+           目前先用 Pikerty 占位，告诉我你的真实账号后一次改好。见 README。 -->
+      <div class="social">
+        <a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://x.com/Pikerty" target="_blank" rel="noopener">X</a>
+        <a href="https://t.me/Pikerty" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.youtube.com/@Pikerty" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/pikerty" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/in/pikerty" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </section>
 </main>
@@ -92,9 +126,17 @@
 <footer class="footer">
   <div class="wrap">
     <span>© 2026 Pikerty</span>
+    <span class="social">
+      <a href="https://github.com/Pikerty" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://x.com/Pikerty" target="_blank" rel="noopener">X</a> ·
+      <a href="https://t.me/Pikerty" target="_blank" rel="noopener">Telegram</a> ·
+      <a href="https://www.youtube.com/@Pikerty" target="_blank" rel="noopener">YouTube</a> ·
+      <a href="feed.xml">RSS</a>
+    </span>
     <span data-zh="用 GitHub Pages 搭建 · 苹果风" data-en="Built with GitHub Pages · Apple-inspired">用 GitHub Pages 搭建 · 苹果风</span>
   </div>
 </footer>
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
 <script src="script.js"></script>
 </body>
 </html>

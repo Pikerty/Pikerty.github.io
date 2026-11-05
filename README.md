@@ -11,11 +11,18 @@ Apple 风格的双语个人博客，用 GitHub Pages 搭建。
 3. 在 `index.html` 的文章列表里加一张卡片，链接到这篇新文章。
 4. 提交到 `main` 分支，几分钟后网站就会更新。
 
+## 社交链接
+
+`index.html` 里关于我和页脚的社交链接：GitHub（https://github.com/Pikerty）是已确认的。
+X / Telegram / YouTube / Instagram / LinkedIn 目前先用 `Pikerty` 占位，
+拿到真实账号后把 `index.html` 里对应的链接改掉，再推一次就行。
+
 ## 文件
 
 - `index.html` — 首页
-- `style.css` — 苹果风样式
-- `script.js` — 中英文切换 + 分类筛选
+- `style.css` — 苹果风样式 + 夜间模式
+- `script.js` — 中英文切换 + 分类筛选 + 搜索 + 夜间模式 + 阅读进度 + 分享
+- `feed.xml` — RSS 订阅
 - `posts/` — 文章页
 
 ## How to add a new post
