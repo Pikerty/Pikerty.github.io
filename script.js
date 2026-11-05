@@ -73,31 +73,54 @@
     });
   });
 
-  // --- Scroll reveal ---
+  // --- Scroll reveal (Apple style): 1s slow ease-out, systematic stagger ---
+  // Stagger comes from the element's position among its siblings (0, 1, 2, 3),
+  // not from a global counter, so cards in a row rise one after another.
   var revealEls = document.querySelectorAll('.featured, .card, .about, .archive, .section-title, .section-sub, .article h2, .article p, .article ul, .article .note');
-  revealEls.forEach(function (el, i) {
+  revealEls.forEach(function (el) {
     el.classList.add('reveal');
-    el.setAttribute('data-delay', String(i % 4));
+    var siblings = el.parentElement ? Array.prototype.filter.call(el.parentElement.children, function (c) { return c.classList.contains('reveal') || c === el; }) : [];
+    var idx = siblings.indexOf(el);
+    el.setAttribute('data-delay', String(Math.max(0, Math.min(3, idx))));
   });
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // --- Reading progress + back to top ---
+  // --- Reading progress + hero parallax, smoothed with requestAnimationFrame ---
+  // Apple pages don't jump on every scroll event: the visible value chases
+  // the real scroll position with lerp (0.14 per frame), so motion stays
+  // fluid at 60fps instead of stuttering. Only transform/opacity are written.
   var bar = document.getElementById('progressBar');
   var toTop = document.getElementById('toTop');
-  function onScroll() {
+  var hero = document.querySelector('.hero');
+  var targetY = window.scrollY || 0, smoothY = targetY, rafId = null;
+  function tick() {
+    rafId = null;
+    smoothY += (targetY - smoothY) * 0.14;
+    if (Math.abs(targetY - smoothY) < 0.1) smoothY = targetY;
     var h = document.documentElement;
     var max = h.scrollHeight - h.clientHeight;
-    if (bar) bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
-    if (toTop) toTop.classList.toggle('show', h.scrollTop > 600);
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? Math.max(0, Math.min(1, smoothY / max)) : 0) + ')';
+    if (toTop) toTop.classList.toggle('show', smoothY > 600);
+    if (hero && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      // Hero zooms out and fades as you scroll away, like an Apple product page.
+      var prog = Math.max(0, Math.min(1, smoothY / Math.max(1, hero.offsetHeight)));
+      hero.style.transform = 'translate3d(0,' + (prog * 48).toFixed(1) + 'px,0) scale(' + (1 - prog * 0.05).toFixed(3) + ')';
+      hero.style.opacity = String((1 - prog * 0.55).toFixed(3));
+    }
+    if (smoothY !== targetY) rafId = requestAnimationFrame(tick);
+  }
+  function onScroll() {
+    targetY = window.scrollY || 0;
+    if (!rafId) rafId = requestAnimationFrame(tick);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -132,7 +155,7 @@
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       e.preventDefault();
       document.body.classList.add('page-leaving');
-      setTimeout(function () { location.href = href; }, 240);
+      setTimeout(function () { location.href = href; }, 450);
     });
   });
 })();
