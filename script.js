@@ -59,6 +59,8 @@
       'region.kr': '韩国',
       'region.other': '其他地区',
       'search.count': '找到 {n} 条结果',
+      'research.empty': '这个组合下没有文章，换个领域或地区试试。',
+      'research.reset': '显示全部',
       'theme.dark': '夜间模式', 'theme.light': '浅色模式'
     },
     en: {
@@ -106,6 +108,8 @@
       'region.kr': 'South Korea',
       'region.other': 'Other regions',
       'search.count': '{n} results found',
+      'research.empty': 'No articles match this combination — try another field or region.',
+      'research.reset': 'Show all',
       'theme.dark': 'Dark Mode', 'theme.light': 'Light Mode'
     },
     es: {
@@ -153,6 +157,8 @@
       'region.kr': 'Corea del Sur',
       'region.other': 'Otras regiones',
       'search.count': '{n} resultados',
+      'research.empty': 'Ningún artículo coincide con esta combinación. Prueba otro campo o región.',
+      'research.reset': 'Mostrar todo',
       'theme.dark': 'Modo oscuro', 'theme.light': 'Modo claro'
     },
     ja: {
@@ -200,6 +206,8 @@
       'region.kr': '韓国',
       'region.other': 'その他の地域',
       'search.count': '{n} 件の結果',
+      'research.empty': 'この組み合わせに合う記事がありません。別の分野や地域を試してください。',
+      'research.reset': 'すべて表示',
       'theme.dark': 'ダークモード', 'theme.light': 'ライトモード'
     },
     yue: {
@@ -247,6 +255,8 @@
       'region.kr': '韓國',
       'region.other': '其他地區',
       'search.count': '搵到 {n} 條結果',
+      'research.empty': '呢個組合冇文章，試下另一個領域或者地區。',
+      'research.reset': '顯示全部',
       'theme.dark': '夜間模式', 'theme.light': '日間模式'
     },
     ko: {
@@ -294,6 +304,8 @@
       'region.kr': '한국',
       'region.other': '기타 지역',
       'search.count': '{n}개의 결과',
+      'research.empty': '이 조합에 맞는 글이 없습니다. 다른 분야나 지역을 시도해 보세요.',
+      'research.reset': '전체 보기',
       'theme.dark': '다크 모드', 'theme.light': '라이트 모드'
     },
     fr: {
@@ -341,6 +353,8 @@
       'region.kr': 'Corée du Sud',
       'region.other': 'Autres régions',
       'search.count': '{n} résultats',
+      'research.empty': 'Aucun article ne correspond à cette combinaison. Essaie un autre domaine ou une autre région.',
+      'research.reset': 'Tout afficher',
       'theme.dark': 'Mode sombre', 'theme.light': 'Mode clair'
     },
     ru: {
@@ -388,6 +402,8 @@
       'region.kr': 'Южная Корея',
       'region.other': 'Другие регионы',
       'search.count': 'Найдено: {n}',
+      'research.empty': 'По этой комбинации статей нет — попробуйте другую область или регион.',
+      'research.reset': 'Показать все',
       'theme.dark': 'Тёмная тема', 'theme.light': 'Светлая тема'
     },
     de: {
@@ -435,6 +451,8 @@
       'region.kr': 'Südkorea',
       'region.other': 'Andere Regionen',
       'search.count': '{n} Ergebnisse',
+      'research.empty': 'Keine Artikel für diese Kombination — versuch einen anderen Bereich oder eine andere Region.',
+      'research.reset': 'Alle anzeigen',
       'theme.dark': 'Dunkelmodus', 'theme.light': 'Hellmodus'
     }
   };
@@ -647,17 +665,21 @@
     if (field) activeRField = field;
     if (region) activeRRegion = region;
     field = activeRField;
+    var shown = 0;
     rCards.forEach(function (card) {
       var fieldOk = activeRField === 'all' || card.getAttribute('data-rfield') === activeRField;
       var regionOk = activeRRegion === 'all' || card.getAttribute('data-region') === activeRRegion;
       var show = fieldOk && regionOk;
       card.style.display = show ? '' : 'none';
       if (show) {
+        shown++;
         card.classList.remove('r-anim');
         void card.offsetWidth;
         card.classList.add('r-anim');
       }
     });
+    var rEmpty = document.getElementById('researchEmpty');
+    if (rEmpty) rEmpty.hidden = shown !== 0;
     if (rMore) {
       rMore.href = R_MORE_URLS[field] || R_MORE_URLS.all;
       var label = document.querySelector('#researchFilters .chip[data-rfilter="' + field + '"]');
@@ -679,6 +701,12 @@
       chip.classList.add('active');
       applyResearchFilter(null, chip.getAttribute('data-region-filter'));
     });
+  });
+  var rReset = document.getElementById('researchReset');
+  if (rReset) rReset.addEventListener('click', function () {
+    rChips.forEach(function (c) { c.classList.toggle('active', c.getAttribute('data-rfilter') === 'all'); });
+    rRegionChips.forEach(function (c) { c.classList.toggle('active', c.getAttribute('data-region-filter') === 'all'); });
+    applyResearchFilter('all', 'all');
   });
   applyResearchFilter('all', 'all');
 

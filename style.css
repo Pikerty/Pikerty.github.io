@@ -373,3 +373,12 @@ html{scroll-behavior:smooth}
   html{scroll-behavior:auto}
   .r-anim{animation:none}
 }
+
+/* ---- Research empty state ---- */
+.research-empty{color:var(--muted);font-size:15px;margin:18px 0 4px}
+.research-empty[hidden]{display:none}
+.research-reset{
+  padding:6px 14px;border:1px solid var(--pill-border);border-radius:999px;
+  background:var(--pill-bg);color:var(--text);font-size:14px;cursor:pointer;font-family:inherit;
+}
+.research-reset:active{transform:scale(.94)}
