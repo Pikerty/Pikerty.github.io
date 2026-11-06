@@ -4,7 +4,7 @@ Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时
 
 ## 2026-11-06
 
-### 待推送 — Facebook 改成主页直达链接
+### `4bd4b9c` — Facebook 改成主页直达链接
 - Facebook 图标之前链到的是 Facebook 搜索页，现在改成主页直达链接 https://www.facebook.com/profile.php?id=61595852169522（通过已连接的 Facebook 账号核对过，名字就是 Asimer Pikerty，是你本人的主页）。
 
 
