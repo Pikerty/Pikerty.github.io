@@ -18,7 +18,7 @@ Apple 风格的双语个人博客，用 GitHub Pages 搭建。
 - X：@PikertyLvery，https://x.com/PikertyLvery
 - Telegram：手机号 +86 19808246285，链接 https://t.me/+8619808246285（点开直接聊这个号码）
 - Instagram：pikertylvery，https://www.instagram.com/pikertylvery
-- Facebook：按名字 Asimer Pikerty 搜，链接是 Facebook 搜索页（没找到直接的主页链接，拿到主页链接后换成直达链接）
+- Facebook：Asimer Pikerty，主页直达链接 https://www.facebook.com/profile.php?id=61595852169522（通过已连接的 Facebook 账号核对过，就是你本人的主页）
 YouTube / LinkedIn 还没给真实账号，先没放图标，拿到账号后加上。
 
 ## 语言
