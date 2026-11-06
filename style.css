@@ -351,3 +351,25 @@ a.guide-card:hover{text-decoration:none;border-color:var(--muted);transform:tran
 .today{color:var(--muted);font-size:15px;margin:0 0 10px}
 .research-more{display:flex;align-items:center;gap:14px;margin:22px 0 8px;flex-wrap:wrap}
 .research-more-note{color:var(--muted);font-size:14px}
+
+/* ---- Click feedback (press) + high-frame-rate smoothness ---- */
+html{scroll-behavior:smooth}
+.btn:active,.chip:active,.engine-btn:active,.lang-option:active,.icon-btn:active,.to-top:active,.search-close:active{
+  transform:scale(.94);
+}
+.card:active,a.guide-card:active,.social a:active{transform:scale(.98)}
+.card,.featured,.guide-card{
+  transform:translateZ(0);
+  backface-visibility:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+.hero,.featured-media img,.card-media img{will-change:transform}
+@keyframes rfade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.r-anim{animation:rfade .5s var(--ease-out) both}
+.filter-label{color:var(--muted);font-size:14px;flex:none;align-self:center}
+.research-regions{margin-top:10px}
+.search-count{max-width:640px;margin:8px auto 0;padding:0 20px 14px;color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .r-anim{animation:none}
+}

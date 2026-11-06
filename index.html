@@ -56,6 +56,7 @@
     <button type="button" class="engine-btn" data-engine="sohu">搜狐</button>
   </div>
   <p class="search-empty" id="searchEmpty" hidden data-i18n="search.empty">没有找到相关文章，换个关键词试试。</p>
+  <p class="search-count" id="searchCount" hidden></p>
 </div>
 
 <main class="wrap">
@@ -145,84 +146,138 @@
   <h2 class="section-title" id="research" data-i18n="research.title">前沿科研</h2>
   <p class="section-sub" data-i18n="research.sub">来自 Nature、Science 等期刊的最新研究，按领域分，点击卡片直接读原文。</p>
   <div class="filters" id="researchFilters">
+    <span class="filter-label" data-i18n="research.by-field">按领域：</span>
     <button class="chip active" type="button" data-rfilter="all" data-i18n="research.all">全部</button>
     <button class="chip" type="button" data-rfilter="space" data-i18n="research.space">太空天文</button>
     <button class="chip" type="button" data-rfilter="ai" data-i18n="research.ai">人工智能</button>
     <button class="chip" type="button" data-rfilter="bio" data-i18n="research.bio">生物医学</button>
     <button class="chip" type="button" data-rfilter="climate" data-i18n="research.climate">气候环境</button>
+    <button class="chip" type="button" data-rfilter="physics" data-i18n="research.physics">物理</button>
+  </div>
+  <div class="filters research-regions" id="researchRegions">
+    <span class="filter-label" data-i18n="research.by-region">按地区：</span>
+    <button class="chip active" type="button" data-region-filter="all" data-i18n="region.all">全部地区</button>
+    <button class="chip" type="button" data-region-filter="cn" data-i18n="region.cn">中国</button>
+    <button class="chip" type="button" data-region-filter="us" data-i18n="region.us">美国</button>
+    <button class="chip" type="button" data-region-filter="eu" data-i18n="region.eu">欧洲</button>
+    <button class="chip" type="button" data-region-filter="jp" data-i18n="region.jp">日本</button>
+    <button class="chip" type="button" data-region-filter="kr" data-i18n="region.kr">韩国</button>
+    <button class="chip" type="button" data-region-filter="other" data-i18n="region.other">其他地区</button>
   </div>
   <div class="grid" id="researchGrid">
-    <a class="card" href="https://www.nature.com/articles/s41586-026-10724-z" target="_blank" rel="noopener" data-rfield="space">
+    <a class="card" href="https://www.nature.com/articles/s41586-026-10724-z" target="_blank" rel="noopener" data-rfield="space" data-region="us">
       <span class="tag">Nature · 太空天文</span>
       <h3>垂死恒星如何把生命元素送回太空</h3>
       <p>Numerous bow shocks in the outer Helix Nebula — 螺旋星云外围的冲击波，揭示了恒星死亡时物质如何回到星际空间。</p>
       <span class="meta">Nature · 2026-08-13 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://doi.org/10.1038/s41550-026-02939-x" target="_blank" rel="noopener" data-rfield="space">
+    <a class="card" href="https://doi.org/10.1038/s41550-026-02939-x" target="_blank" rel="noopener" data-rfield="space" data-region="jp">
       <span class="tag">Nature Astronomy · 太空天文</span>
       <h3>黑洞“喷流”搅动 30 万光年外的气体</h3>
       <p>Vigorous turbulence driven by quasar-mode feedback in a cluster core — 类星体反馈产生的湍流比之前估计的强约 100 倍。</p>
       <span class="meta">Nature Astronomy · 2026-07-28 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://www.nature.com/articles/d41586-026-03154-4" target="_blank" rel="noopener" data-rfield="space">
+    <a class="card" href="https://www.nature.com/articles/d41586-026-03154-4" target="_blank" rel="noopener" data-rfield="space" data-region="other">
       <span class="tag">Nature · 太空天文</span>
       <h3>阿联酋完成阿拉伯世界首个独立太空探测器</h3>
       <p>UAE completes Arab world’s first solo space probe — 探测器预计 2035 年飞抵小行星 Justicia。</p>
       <span class="meta">Nature · 2026-10-08 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://www.eurekalert.org/news-releases/1116699" target="_blank" rel="noopener" data-rfield="ai">
+    <a class="card" href="https://www.eurekalert.org/news-releases/1116699" target="_blank" rel="noopener" data-rfield="ai" data-region="us">
       <span class="tag">Science · 人工智能</span>
       <h3>一种引导 AI 输出的新方法：能调控，也暴露了弱点</h3>
       <p>Toward universal steering and monitoring of AI models — 通过操控大语言模型内部的概念来引导输出，发表于 Science。</p>
       <span class="meta">Science · 2026-02-19 · 报道 ↗</span>
     </a>
-    <a class="card" href="https://news.stanford.edu/stories/2026/09/spin-glass-memory-ai-research" target="_blank" rel="noopener" data-rfield="ai">
+    <a class="card" href="https://news.stanford.edu/stories/2026/09/spin-glass-memory-ai-research" target="_blank" rel="noopener" data-rfield="ai" data-region="us">
       <span class="tag">Science · 人工智能</span>
       <h3>物理学新突破：让 AI 记得更多、学得更好</h3>
       <p>一种由原子和光子构成的量子光学自旋玻璃，让简单 AI 系统的记忆容量超过同等规模的传统网络。</p>
       <span class="meta">Science · 2026-09-11 · 报道 ↗</span>
     </a>
-    <a class="card" href="https://techxplore.com/news/2026-10-ai-framework-thirds-tripling-success.html" target="_blank" rel="noopener" data-rfield="ai">
+    <a class="card" href="https://techxplore.com/news/2026-10-ai-framework-thirds-tripling-success.html" target="_blank" rel="noopener" data-rfield="ai" data-region="kr">
       <span class="tag">arXiv · 人工智能</span>
       <h3>AI 框架让算力省三分之二，任务成功率翻三倍</h3>
       <p>Selective Critique for Cost-Aware LLM Agents — 让 AI 助手处理复杂长任务时更省算力、成功率从 24.6% 升到 78.3%。</p>
       <span class="meta">arXiv · 2026-10-26 · 报道 ↗</span>
     </a>
-    <a class="card" href="https://doi.org/10.1038/s41586-026-11206-y" target="_blank" rel="noopener" data-rfield="bio">
+    <a class="card" href="https://doi.org/10.1038/s41586-026-11206-y" target="_blank" rel="noopener" data-rfield="bio" data-region="eu">
       <span class="tag">Nature · 生物医学</span>
       <h3>迄今最大规模阿尔茨海默病遗传学研究</h3>
       <p>Alzheimer’s disease genetics converges on microglial and neuronal dysregulation — 发现 127 个与患病风险相关的 DNA 区域，其中 48 个是首次发现。</p>
       <span class="meta">Nature · 2026-10-28 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://doi.org/10.1038/s43587-026-01204-0" target="_blank" rel="noopener" data-rfield="bio">
+    <a class="card" href="https://doi.org/10.1038/s43587-026-01204-0" target="_blank" rel="noopener" data-rfield="bio" data-region="us">
       <span class="tag">Nature Aging · 生物医学</span>
       <h3>大脑防线的一个弱点，或能解释阿尔茨海默病</h3>
       <p>Fibronectin mediates APOE4-driven blood–brain barrier dysfunction in Alzheimer’s disease — 过量的纤连蛋白会让血脑屏障渗漏。</p>
       <span class="meta">Nature Aging · 2026-09-11 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://doi.org/10.1038/s41593-026-02267-3" target="_blank" rel="noopener" data-rfield="bio">
+    <a class="card" href="https://doi.org/10.1038/s41593-026-02267-3" target="_blank" rel="noopener" data-rfield="bio" data-region="eu">
       <span class="tag">Nature Neuroscience · 生物医学</span>
       <h3>新技术在阿尔茨海默病大脑里发现未知免疫细胞群</h3>
       <p>Spatial proteomic analysis in human Alzheimer’s disease brains — 一次看清 30 多种蛋白标记，发现聚集在淀粉样斑块附近的特殊小胶质细胞。</p>
       <span class="meta">Nature Neuroscience · 2026-05-20 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://www.nature.com/articles/s41586-026-10607-3" target="_blank" rel="noopener" data-rfield="climate">
+    <a class="card" href="https://www.nature.com/articles/s41586-026-10607-3" target="_blank" rel="noopener" data-rfield="climate" data-region="cn">
       <span class="tag">Nature · 气候环境</span>
       <h3>临时碳移除到底有没有用？北大团队给出科学标尺</h3>
       <p>北京大学团队在 Nature 发表研究，建立框架判断临时碳储存能带来多少真实气候效益，提出“抵消比”新指标。</p>
       <span class="meta">Nature · 2026-06-16 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://www.nature.com/articles/s41612-026-01563-w" target="_blank" rel="noopener" data-rfield="climate">
+    <a class="card" href="https://www.nature.com/articles/s41612-026-01563-w" target="_blank" rel="noopener" data-rfield="climate" data-region="cn">
       <span class="tag">npj Climate · 气候环境</span>
       <h3>热带海洋正在加速北极变暖</h3>
       <p>Tropical Indo-western Pacific forcing expedites warming in the northern Canadian–Greenland Arctic — 热带印度-西太平洋的暖水通过遥相关放大了北极变暖。</p>
       <span class="meta">npj Climate and Atmospheric Science · 2026-10-10 · 原文 ↗</span>
     </a>
-    <a class="card" href="https://www.nature.com/articles/s41467-026-78279-1" target="_blank" rel="noopener" data-rfield="climate">
+    <a class="card" href="https://www.nature.com/articles/s41467-026-78279-1" target="_blank" rel="noopener" data-rfield="climate" data-region="kr">
       <span class="tag">Nature Communications · 气候环境</span>
       <h3>珊瑚礁海洋热浪可以提前数年预测</h3>
       <p>Marine heat waves in vulnerable coral reef regions are skillfully predictable on multi-year timescales — 频率和强度在多个海区可提前数月到数年预测。</p>
       <span class="meta">Nature Communications · 2026-10-27 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s41550-026-02999-z" target="_blank" rel="noopener" data-rfield="space" data-region="cn">
+      <span class="tag">Nature Astronomy · 太空天文 · 中国</span>
+      <h3>哈勃望远镜：星系的电离辐射在星风之前就逃了出来</h3>
+      <p>Lyman continuum escape during the onset of galactic winds in compact starbursts — 浙江大学团队领衔，挑战了关于宇宙再电离的主流解释。</p>
+      <span class="meta">Nature Astronomy · 2026 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://scienmag.com/euclid-space-telescope-discovers-its-first-previously-unknown-comet/" target="_blank" rel="noopener" data-rfield="space" data-region="eu">
+      <span class="tag">ESA · 太空天文 · 欧洲</span>
+      <h3>欧空局欧几里得望远镜发现首颗未知彗星</h3>
+      <p>Euclid discovers new comet — C/2026 S1 (Euclid)，由赫尔辛基大学的博士生在欧几里得巡天图像中发现。</p>
+      <span class="meta">ESA Euclid · 2026-10-19 · 报道 ↗</span>
+    </a>
+    <a class="card" href="https://www.nature.com/articles/s41550-026-03002-5" target="_blank" rel="noopener" data-rfield="space" data-region="us">
+      <span class="tag">Nature Astronomy · 太空天文 · 美国</span>
+      <h3>韦伯望远镜在星际彗星 3I/ATLAS 测到创纪录的重氢</h3>
+      <p>An enriched methane D/H ratio in the interstellar object 3I/ATLAS — 甲烷中的氘氢比超过太阳系内测到的任何值，约 13 倍于罗塞塔号在 67P 彗星的测量。</p>
+      <span class="meta">Nature Astronomy · 2026-10-23 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://arxiv.org/abs/2611.00230" target="_blank" rel="noopener" data-rfield="physics" data-region="eu">
+      <span class="tag">CERN LHCb · 物理 · 欧洲</span>
+      <h3>欧洲核子中心找到超稀有粒子衰变的证据</h3>
+      <p>Evidence for the decay B0 → μ+μ− — B0 介子衰变成一对缪子，标准模型预言约每 100 亿次衰变才发生一次，科学家追了 40 多年。</p>
+      <span class="meta">Physical Review X · 2026-11-04 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1103/jmwb-75m7" target="_blank" rel="noopener" data-rfield="physics" data-region="eu">
+      <span class="tag">CERN ALICE · 物理 · 欧洲</span>
+      <h3>欧洲核子中心新测量挑战胶子行为的传统模型</h3>
+      <p>Evidence for J/ψ suppression in incoherent photonuclear production — 首次多维测量胶子在原子核内的分布，看清了束缚夸克的粒子如何排列。</p>
+      <span class="meta">Physical Review Letters · 2026-08-11 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1007/JHEP10(2026)006" target="_blank" rel="noopener" data-rfield="physics" data-region="eu">
+      <span class="tag">CERN CMS · 物理 · 欧洲</span>
+      <h3>大型强子对撞机寻找衰变成一对 Z 玻色子的新重粒子</h3>
+      <p>Search for a new heavy scalar resonance decaying to a pair of Z bosons — CMS 合作组用 13 TeV 对撞数据寻找超出标准模型的新粒子。</p>
+      <span class="meta">JHEP · 2026-10-01 · 原文 ↗</span>
+    </a>
+    <a class="card" href="https://doi.org/10.1038/s43247-026-03872-7" target="_blank" rel="noopener" data-rfield="climate" data-region="us">
+      <span class="tag">Communications Earth &amp; Environment · 气候环境 · 美国</span>
+      <h3>减排拖得越久，北极气候临界点越危险</h3>
+      <p>Arctic climate tipping points under delayed CO2 emissions mitigation — 北极升温已超全球平均 3 倍，减排时机决定它是继续变暖还是突然转冷。</p>
+      <span class="meta">Communications Earth &amp; Environment · 2026-10-10 · 原文 ↗</span>
     </a>
   </div>
   <div class="research-more">
@@ -265,6 +320,7 @@
 <footer class="footer">
   <div class="wrap">
     <span>© 2026 Pikerty</span>
+    <span><a href="https://github.com/Pikerty/Pikerty.github.io/blob/main/CHANGELOG.md" target="_blank" rel="noopener">更新日志</a></span>
     <span class="social">
       <a href="https://github.com/Pikerty" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
       <a href="https://x.com/PikertyLvery" target="_blank" rel="noopener" aria-label="X @PikertyLvery" title="X @PikertyLvery"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>

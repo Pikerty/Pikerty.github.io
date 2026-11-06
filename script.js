@@ -48,6 +48,17 @@
       'research.bio': '生物医学',
       'research.climate': '气候环境',
       'research.more': '浏览更多',
+      'research.physics': '物理',
+      'research.by-field': '按领域：',
+      'research.by-region': '按地区：',
+      'region.all': '全部地区',
+      'region.cn': '中国',
+      'region.us': '美国',
+      'region.eu': '欧洲',
+      'region.jp': '日本',
+      'region.kr': '韩国',
+      'region.other': '其他地区',
+      'search.count': '找到 {n} 条结果',
       'theme.dark': '夜间模式', 'theme.light': '浅色模式'
     },
     en: {
@@ -84,6 +95,17 @@
       'research.bio': 'Biomedicine',
       'research.climate': 'Climate & Environment',
       'research.more': 'Browse more',
+      'research.physics': 'Physics',
+      'research.by-field': 'By field:',
+      'research.by-region': 'By region:',
+      'region.all': 'All regions',
+      'region.cn': 'China',
+      'region.us': 'United States',
+      'region.eu': 'Europe',
+      'region.jp': 'Japan',
+      'region.kr': 'South Korea',
+      'region.other': 'Other regions',
+      'search.count': '{n} results found',
       'theme.dark': 'Dark Mode', 'theme.light': 'Light Mode'
     },
     es: {
@@ -120,6 +142,17 @@
       'research.bio': 'Biomedicina',
       'research.climate': 'Clima y medio ambiente',
       'research.more': 'Ver más',
+      'research.physics': 'Física',
+      'research.by-field': 'Por campo:',
+      'research.by-region': 'Por región:',
+      'region.all': 'Todas las regiones',
+      'region.cn': 'China',
+      'region.us': 'Estados Unidos',
+      'region.eu': 'Europa',
+      'region.jp': 'Japón',
+      'region.kr': 'Corea del Sur',
+      'region.other': 'Otras regiones',
+      'search.count': '{n} resultados',
       'theme.dark': 'Modo oscuro', 'theme.light': 'Modo claro'
     },
     ja: {
@@ -156,6 +189,17 @@
       'research.bio': '生物医学',
       'research.climate': '気候・環境',
       'research.more': 'もっと見る',
+      'research.physics': '物理学',
+      'research.by-field': '分野別：',
+      'research.by-region': '地域別：',
+      'region.all': 'すべての地域',
+      'region.cn': '中国',
+      'region.us': 'アメリカ',
+      'region.eu': 'ヨーロッパ',
+      'region.jp': '日本',
+      'region.kr': '韓国',
+      'region.other': 'その他の地域',
+      'search.count': '{n} 件の結果',
       'theme.dark': 'ダークモード', 'theme.light': 'ライトモード'
     },
     yue: {
@@ -192,6 +236,17 @@
       'research.bio': '生物醫學',
       'research.climate': '氣候環境',
       'research.more': '瀏覽更多',
+      'research.physics': '物理',
+      'research.by-field': '按領域：',
+      'research.by-region': '按地區：',
+      'region.all': '全部地區',
+      'region.cn': '中國',
+      'region.us': '美國',
+      'region.eu': '歐洲',
+      'region.jp': '日本',
+      'region.kr': '韓國',
+      'region.other': '其他地區',
+      'search.count': '搵到 {n} 條結果',
       'theme.dark': '夜間模式', 'theme.light': '日間模式'
     },
     ko: {
@@ -228,6 +283,17 @@
       'research.bio': '생명의학',
       'research.climate': '기후·환경',
       'research.more': '더 보기',
+      'research.physics': '물리학',
+      'research.by-field': '분야별:',
+      'research.by-region': '지역별:',
+      'region.all': '모든 지역',
+      'region.cn': '중국',
+      'region.us': '미국',
+      'region.eu': '유럽',
+      'region.jp': '일본',
+      'region.kr': '한국',
+      'region.other': '기타 지역',
+      'search.count': '{n}개의 결과',
       'theme.dark': '다크 모드', 'theme.light': '라이트 모드'
     },
     fr: {
@@ -264,6 +330,17 @@
       'research.bio': 'Biomédecine',
       'research.climate': 'Climat et environnement',
       'research.more': 'Voir plus',
+      'research.physics': 'Physique',
+      'research.by-field': 'Par domaine :',
+      'research.by-region': 'Par région :',
+      'region.all': 'Toutes les régions',
+      'region.cn': 'Chine',
+      'region.us': 'États-Unis',
+      'region.eu': 'Europe',
+      'region.jp': 'Japon',
+      'region.kr': 'Corée du Sud',
+      'region.other': 'Autres régions',
+      'search.count': '{n} résultats',
       'theme.dark': 'Mode sombre', 'theme.light': 'Mode clair'
     },
     ru: {
@@ -300,6 +377,17 @@
       'research.bio': 'Биомедицина',
       'research.climate': 'Климат и окружающая среда',
       'research.more': 'Ещё',
+      'research.physics': 'Физика',
+      'research.by-field': 'По областям:',
+      'research.by-region': 'По регионам:',
+      'region.all': 'Все регионы',
+      'region.cn': 'Китай',
+      'region.us': 'США',
+      'region.eu': 'Европа',
+      'region.jp': 'Япония',
+      'region.kr': 'Южная Корея',
+      'region.other': 'Другие регионы',
+      'search.count': 'Найдено: {n}',
       'theme.dark': 'Тёмная тема', 'theme.light': 'Светлая тема'
     },
     de: {
@@ -336,6 +424,17 @@
       'research.bio': 'Biomedizin',
       'research.climate': 'Klima & Umwelt',
       'research.more': 'Mehr ansehen',
+      'research.physics': 'Physik',
+      'research.by-field': 'Nach Bereich:',
+      'research.by-region': 'Nach Region:',
+      'region.all': 'Alle Regionen',
+      'region.cn': 'China',
+      'region.us': 'USA',
+      'region.eu': 'Europa',
+      'region.jp': 'Japan',
+      'region.kr': 'Südkorea',
+      'region.other': 'Andere Regionen',
+      'search.count': '{n} Ergebnisse',
       'theme.dark': 'Dunkelmodus', 'theme.light': 'Hellmodus'
     }
   };
@@ -473,6 +572,14 @@
   // --- Search + category filter (homepage) ---
   var searchInput = document.getElementById('searchInput');
   var searchEmpty = document.getElementById('searchEmpty');
+  var searchCount = document.getElementById('searchCount');
+  // Press "/" anywhere (outside inputs) to open search
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) {
+      e.preventDefault();
+      setSearch(true);
+    }
+  });
   var chips = document.querySelectorAll('#filters .chip');
   var cards = document.querySelectorAll('[data-cat]');
   var activeFilter = 'all';
@@ -493,7 +600,26 @@
       featured.style.display = fOk ? '' : 'none';
       if (fOk) visible++;
     }
-    if (searchEmpty) searchEmpty.hidden = visible !== 0;
+    // Internal search also covers research cards
+    var rVisible = 0;
+    document.querySelectorAll('[data-rfield]').forEach(function (card) {
+      var textOk = !q || card.textContent.toLowerCase().indexOf(q) !== -1;
+      var fieldOk = activeRField === 'all' || card.getAttribute('data-rfield') === activeRField;
+      var regionOk = activeRRegion === 'all' || card.getAttribute('data-region') === activeRRegion;
+      var show = textOk && fieldOk && regionOk;
+      card.style.display = show ? '' : 'none';
+      if (show) rVisible++;
+    });
+    var total = visible + rVisible;
+    if (searchEmpty) searchEmpty.hidden = total !== 0;
+    if (searchCount) {
+      if (q) {
+        searchCount.hidden = false;
+        searchCount.textContent = t('search.count').replace('{n}', String(total));
+      } else {
+        searchCount.hidden = true;
+      }
+    }
   }
   if (searchInput) searchInput.addEventListener('input', applyFilters);
   chips.forEach(function (chip) {
@@ -515,9 +641,22 @@
     bio: 'https://www.nature.com/search?q=medicine',
     climate: 'https://www.nature.com/search?q=climate%20change'
   };
-  function applyResearchFilter(field) {
+  var activeRField = 'all';
+  var activeRRegion = 'all';
+  function applyResearchFilter(field, region) {
+    if (field) activeRField = field;
+    if (region) activeRRegion = region;
+    field = activeRField;
     rCards.forEach(function (card) {
-      card.style.display = (field === 'all' || card.getAttribute('data-rfield') === field) ? '' : 'none';
+      var fieldOk = activeRField === 'all' || card.getAttribute('data-rfield') === activeRField;
+      var regionOk = activeRRegion === 'all' || card.getAttribute('data-region') === activeRRegion;
+      var show = fieldOk && regionOk;
+      card.style.display = show ? '' : 'none';
+      if (show) {
+        card.classList.remove('r-anim');
+        void card.offsetWidth;
+        card.classList.add('r-anim');
+      }
     });
     if (rMore) {
       rMore.href = R_MORE_URLS[field] || R_MORE_URLS.all;
@@ -530,10 +669,18 @@
     chip.addEventListener('click', function () {
       rChips.forEach(function (c) { c.classList.remove('active'); });
       chip.classList.add('active');
-      applyResearchFilter(chip.getAttribute('data-rfilter'));
+      applyResearchFilter(chip.getAttribute('data-rfilter'), null);
     });
   });
-  applyResearchFilter('all');
+  var rRegionChips = document.querySelectorAll('#researchRegions .chip');
+  rRegionChips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      rRegionChips.forEach(function (c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      applyResearchFilter(null, chip.getAttribute('data-region-filter'));
+    });
+  });
+  applyResearchFilter('all', 'all');
 
   // --- Scroll reveal (Apple style): 1s slow ease-out, systematic stagger ---
   var revealEls = document.querySelectorAll('.featured, .card, .about, .archive, .section-title, .section-sub, .article h2, .article p, .article ul, .article .note');
