@@ -2,6 +2,14 @@
 
 Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时间倒序。每次改动推到 GitHub 后都会在这里补一条。
 
+## 2026-11-15
+
+### Phase 1 批次 A — 建立 docs/ 文档体系（分支 phase1/batch-a-docs，待合并）
+- 原因：Website 3.0 总规划要求文档与代码同步维护，之前仓库只有 README 和本文件，架构、设计规范、兼容性、测试都没有正式记录的地方。
+- 内容：新建 docs/architecture.md（技术架构）、docs/design-system.md（设计规范框架，数值取自现行 style.css）、docs/compatibility.md（兼容性测试矩阵，全部先标 Not Tested）、docs/optimization-log.md（优化日志，含阶段 0 审计的体积基线）、docs/development-log.md（阶段进度与技术决策）、docs/testing/test-report.md（测试报告格式与本批次记录）。
+- 影响：只新增文档，没有改任何网站代码，线上页面没有任何变化。
+- 流程：这是第一次走「分支 → PR → 确认后合并 main」的新流程，合并后在此把提交号补上。
+
 ## 2026-11-06
 
 ### `bd65ef8` — 科研筛选空状态：筛不到文章时给提示和一键重置
