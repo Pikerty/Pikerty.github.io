@@ -4,6 +4,21 @@ Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时
 
 ## 2026-11-15
 
+### 批次 2a（直接优化）— 图片宽高、懒加载与解码优化
+- 时间：2026-11-15 14:13（CST）。基线版本：main `ccd97f7`。
+- 任务名称：全面页面优化批次 2a（图片加载属性）。
+- 修改原因：审计确认全站图片无 width/height（布局偏移 CLS 风险）、无懒加载，首屏外图片也一次性全量加载。
+- 修改前存在的问题：12 处 `<img>` 均无宽高、无 loading 属性；首页 8 张图全量加载。
+- 实际修改内容：按图片真实尺寸写入 width/height（hero-mountain 1920×1080、times-square 1200×801、code-dark 1200×797、study-desk 384×672，尺寸以文件实测为准）；全部图片加 decoding="async"；首页首图与 4 篇文章头图加 fetchpriority="high" 保持优先加载，其余 7 张加 loading="lazy"。
+- 涉及文件：index.html、posts/ai-romance.html、posts/ielts-day4.html、posts/travel-video.html、posts/whv.html、CHANGELOG.md。
+- 修复方案：只改 `<img>` 属性，不动图片文件本身、不动 CSS/JS；WebP 转换单列批次 2b。
+- 测试环境及结果：本地静态服务器实测 5 个改动页面均 200，逐图核对属性计数（12/12 已加宽高）；推送后线上复验为准。
+- 是否影响其他页面：guide.html、ielts.html 无图片，未受影响；style.css、script.js 未动。
+- GitHub Commit：本条目随本次修改同一次提交推送，提交号在下一次记录中回填。
+- GitHub Pages 部署结果：推送后验证，回填于下一次记录。
+- 尚未解决的问题：WebP（批次 2b）；CSS 单断点（批次 3）；feed.xml 星期错误；Lighthouse 未测。
+- 附带回填：批次 1 提交号 `ccd97f73783dfd33e5f94f207550757f2a9a0a99`，部署已验证 — 7 个页面新 `<head>` 内容线上生效，sitemap.xml / robots.txt / favicon.svg 部署初期短暂 404 后均返回 200。
+
 ### 批次 1（直接优化）— 全站 favicon、SEO 基础件、文章页 description
 - 时间：2026-11-15 14:10–14:20（CST）。基线版本：main `7f88f0b`（2026-11-06）。
 - 任务名称：全面页面优化批次 1（favicon + SEO 基础）。
@@ -14,8 +29,8 @@ Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时
 - 修复方案：只增不改 — 只在 `<head>` 插入新标签，不动正文、样式与脚本；OG 图片使用各页已有的真实配图。
 - 测试环境及结果：本地克隆（HEAD 与线上一致）修改后用本地静态服务器实测，7 个页面与 3 个新文件均返回 200；逐页核对 icon/canonical/OG 计数各 1；sitemap.xml 通过 XML 解析；结果以推送后线上复验为准，未在线上复验前不记为部署成功。
 - 是否影响其他页面：`<head>` 之外零改动，页面正文与交互不受影响；script.js、style.css、feed.xml 本批次未动。
-- GitHub Commit：本条目随本次修改同一次提交推送，提交号按本文件既有做法在下一次记录中回填。
-- GitHub Pages 部署结果：推送后验证，回填于下一次记录。
+- GitHub Commit：`ccd97f73783dfd33e5f94f207550757f2a9a0a99`（与本条目同一次提交，回填于批次 2a 记录）。
+- GitHub Pages 部署结果：已验证成功 — 线上 7 页新标签生效，3 个新文件均 200（详见批次 2a 记录的附带回填）。
 - 尚未解决的问题：图片无宽高与懒加载（批次 2）；CSS 仅 640px 单断点（批次 3）；feed.xml 星期错误；Lighthouse 未测。
 
 ## 2026-11-06
