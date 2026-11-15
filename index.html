@@ -22,20 +22,12 @@
 </head>
 <body>
 <div class="progress" id="progressBar" aria-hidden="true"></div>
-<header class="nav">
-  <div class="nav-inner">
-    <a class="logo" href="index.html">Pikerty</a>
-    <nav class="nav-links">
-      <a href="#latest" data-i18n="nav.latest">最新文章</a>
-      <a href="#archive" data-i18n="nav.archive">归档</a>
-      <a href="#about" data-i18n="nav.about">关于我</a>
-      <a href="guide.html" data-i18n="nav.guide">外网指南</a>
-      <a href="ielts.html" data-i18n="nav.ielts">考试指南</a>
-      <a href="#research" data-i18n="nav.research">前沿科研</a>
-    </nav>
+<header class="site-head">
+  <div class="utility-bar">
     <button class="icon-btn" id="searchToggle" type="button" aria-label="搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
-    <button class="lang-btn" id="themeBtn" type="button" aria-label="切换夜间模式">夜间模式</button>
-<div class="lang-menu">
+    <div class="utility-right">
+      <button class="lang-btn" id="themeBtn" type="button" aria-label="切换夜间模式">夜间模式</button>
+      <div class="lang-menu">
       <button class="icon-btn" id="langBtn" type="button" aria-label="Language / 语言"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z"/></svg></button>
       <div class="lang-dropdown" id="langDropdown" hidden>
         <button type="button" class="lang-option" data-lang="zh"><span class="check"></span>中文（简体）</button>
@@ -49,7 +41,28 @@
         <button type="button" class="lang-option" data-lang="de"><span class="check"></span>Deutsch</button>
       </div>
     </div>
+    </div>
   </div>
+  <div class="brand">
+    <p class="today" id="todayDate"></p>
+    <p class="brand-name">PIKERTY</p>
+    <p class="eyebrow" data-i18n="hero.eyebrow">博客 · 日常记录</p>
+    <h1><span data-i18n="hero.title">把学到的、做过的，慢慢记下来。</span><span class="en" data-i18n="hero.subtitle">Write it down, in Chinese and in English.</span></h1>
+    <p class="brand-desc" data-i18n="hero.desc">这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。</p>
+    <div class="brand-tags" aria-label="内容标签"><span>IELTS</span><span>Technology</span><span>Travel</span><span>Personal Growth</span></div>
+    <div class="cta">
+      <a class="btn" href="#latest" data-i18n="hero.cta1">开始阅读</a>
+      <a class="btn ghost" href="#about" data-i18n="hero.cta2">关于我</a>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="主导航">
+    <a href="#latest" class="active" aria-current="true" data-i18n="nav.latest">最新文章</a>
+    <a href="#archive" data-i18n="nav.archive">归档</a>
+    <a href="#about" data-i18n="nav.about">关于我</a>
+    <a href="guide.html" data-i18n="nav.guide">外网指南</a>
+    <a href="ielts.html" data-i18n="nav.ielts">考试指南</a>
+    <a href="#research" data-i18n="nav.research">前沿科研</a>
+  </nav>
 </header>
 <div class="search-panel" id="searchPanel" hidden>
   <div class="search-panel-inner">
@@ -69,16 +82,8 @@
 </div>
 
 <main class="wrap">
-  <section class="hero">
+  <section class="hero hero-poster">
     <div class="hero-media"><img src="assets/hero-mountain.jpg" width="1920" height="1080" decoding="async" fetchpriority="high" alt="深夜山月海报：雪山与松林"></div>
-    <p class="today" id="todayDate"></p>
-    <p class="eyebrow" data-i18n="hero.eyebrow">博客 · 日常记录</p>
-    <h1><span data-i18n="hero.title">把学到的、做过的，慢慢记下来。</span><span class="en" data-i18n="hero.subtitle">Write it down, in Chinese and in English.</span></h1>
-    <p data-i18n="hero.desc">这里是 Pikerty 的个人博客：雅思备考、打工度假签、技术折腾、旅行视频，都是真实的进度，不是完美的成品。</p>
-    <div class="cta">
-      <a class="btn" href="#latest" data-i18n="hero.cta1">开始阅读</a>
-      <a class="btn ghost" href="#about" data-i18n="hero.cta2">关于我</a>
-    </div>
     <p class="hero-credit">海报图片：WallpaperCave / Pexels，存于仓库 assets/</p>
   </section>
 
