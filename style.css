@@ -410,3 +410,59 @@ img{max-width:100%;height:auto}
   .nav-links{-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
   .hero{margin-top:16px;padding:64px 20px 56px}
 }
+
+/* ---- Homepage header redesign: utility bar / brand / main nav (2026-11-15) ---- */
+.site-head{max-width:1024px;margin:0 auto;padding:0 22px}
+.utility-bar{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 0;padding-top:calc(10px + env(safe-area-inset-top, 0px));
+  background:rgba(251,251,253,.82);
+  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+}
+html[data-theme="dark"] .utility-bar{background:rgba(0,0,0,.78)}
+.utility-right{display:flex;align-items:center;gap:12px}
+.utility-right .lang-menu{margin-left:0}
+.brand{text-align:center;padding:52px 0 40px;max-width:760px;margin:0 auto}
+.brand .today{margin:0 0 14px}
+.brand-name{
+  font-size:clamp(46px,9vw,76px);font-weight:800;letter-spacing:.14em;
+  line-height:1;color:var(--text);margin:0 0 16px;text-indent:.14em;
+}
+.brand .eyebrow{color:var(--muted);font-size:16px;margin:0 0 14px;letter-spacing:.06em}
+.brand h1{font-size:31px;line-height:1.3;letter-spacing:-.01em;font-weight:700;margin:0}
+.brand h1 .en{display:block;font-size:19px;color:var(--muted);font-weight:600;margin-top:10px;letter-spacing:0}
+.brand-desc{margin:20px auto 0;max-width:620px;color:var(--muted2);font-size:17px;line-height:1.65}
+.brand-tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.brand-tags span{
+  font-size:12.5px;color:var(--muted2);border:1px solid var(--line);
+  border-radius:980px;padding:4px 12px;letter-spacing:.02em;
+}
+.brand .cta{margin-top:28px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.main-nav{
+  display:flex;justify-content:center;gap:30px;flex-wrap:wrap;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:13px 0;margin-bottom:6px;
+}
+.main-nav a{color:var(--text);font-size:15px;opacity:.82;padding:2px 1px}
+.main-nav a:hover{opacity:1;text-decoration:none}
+.main-nav a.active{opacity:1;font-weight:600;box-shadow:inset 0 -2px 0 var(--text)}
+.hero-poster{min-height:320px;justify-content:flex-end}
+@media(min-width:1440px){
+  .site-head{max-width:1200px}
+}
+@media(max-width:640px){
+  .site-head{padding:0 16px}
+  .brand{padding:38px 0 30px}
+  .brand h1{font-size:25px}
+  .brand h1 .en{font-size:16px}
+  .brand-desc{font-size:16px}
+  .main-nav{
+    flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;gap:22px;
+    scrollbar-width:none;white-space:nowrap;
+    -webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent);
+  }
+  .main-nav::-webkit-scrollbar{display:none}
+  .main-nav a{flex:none}
+  .hero-poster{min-height:220px}
+}
