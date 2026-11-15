@@ -382,3 +382,21 @@ html{scroll-behavior:smooth}
   background:var(--pill-bg);color:var(--text);font-size:14px;cursor:pointer;font-family:inherit;
 }
 .research-reset:active{transform:scale(.94)}
+
+/* ---- Responsive & focus completion (2026-11-15 batch 3) ---- */
+:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:4px}
+img{max-width:100%;height:auto}
+@media(min-width:641px) and (max-width:1023px){
+  .hero{padding-top:72px;padding-bottom:48px}
+  .hero h1{font-size:48px}
+  .hero h1 .en{font-size:28px}
+  .nav-inner{gap:20px}
+  .section-title{font-size:29px}
+  .article{padding-top:48px;padding-bottom:64px}
+}
+@media(min-width:1440px){
+  .wrap,.nav-inner,.search-panel-inner{max-width:1200px}
+  .hero h1{font-size:64px}
+  .hero h1 .en{font-size:36px}
+  .section-title{font-size:36px}
+}
