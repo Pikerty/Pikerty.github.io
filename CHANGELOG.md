@@ -4,6 +4,23 @@ Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时
 
 ## 2026-11-15
 
+### 批次 5（直接优化）— 首页顶部 Header 极简品牌化改版
+- 时间：2026-11-15 18:16（CST）。基线版本：main `4d88427`。
+- 任务名称：首页顶部区域视觉重构（Minimal Personal Brand Header）。
+- 修改原因：用户指令 — 顶部 Logo、搜索、主题、语言全挤在同一行，布局不协调、品牌信息不突出、导航缺层次；要求拆成三个独立区域。
+- 修改前存在的问题：单行顶栏承载全部元素（批次 4 只做了右对齐补救，结构未变）；站名只是 17px 小字，没有品牌展示区；导航与功能按钮同层、无选中状态反馈；主题句/简介压在海报图上（hero），层次靠图片撑。
+- 新的设计方案：三区结构 — ①顶部功能区 utility-bar（搜索在左上角，主题切换+语言切换在右上角，sticky 吸顶、毛玻璃背景、含安全区 padding）；②中央品牌区 brand（日期行 → PIKERTY 大字品牌名 → 博客·日常记录 → 主题句 h1 + 英文副标题 → 简介 → IELTS/Technology/Travel/Personal Growth 四个低调标签 → 开始阅读/关于我按钮）；③底部导航区 main-nav（六个栏目独立成行、上下细分隔线、当前栏目低调加粗+下划线、手机端横向滚动+右侧渐隐）。原海报改为品牌区下方的纯视觉横幅（hero-poster），图片与署名保留。
+- 具体实施内容：index.html 重构 header 与 hero 两处结构（所有 script.js 依赖的 ID — searchToggle/themeBtn/langBtn/langDropdown/todayDate/searchPanel — 与全部 data-i18n 键原样保留，逐项核对各出现 1 次）；style.css 末尾追加新样式段（.site-head/.utility-bar/.brand/.brand-name/.brand-tags/.main-nav/.hero-poster + 640px 与 1440px 两档适配），旧 .nav 样式保留给 guide/ielts/文章页使用，未删。
+- 涉及文件：index.html、style.css、CHANGELOG.md。script.js 未动，其他 6 个页面未动。
+- 移动端适配结果：本地静态服务器结构测试通过（首页 200、新结构类名齐全、CSS 配平）；iPhone 真机视觉待用户刷新确认（未实测前不记为通过）。
+- 桌面端兼容性测试结果：本地结构测试通过；桌面真实渲染待确认。
+- 功能回归测试结果：静态核对 — 搜索/主题/语言/日期/筛选所依赖的 ID 与 i18n 键全部保留且唯一；JS 未改动。真机点击回归待用户确认。
+- 是否影响其他页面：guide/ielts/文章页继续用旧 .nav 顶栏，本次未改版（用户本次只要求首页）。
+- GitHub Commit：本条目随本次修改同批推送（连接器逐文件提交，提交号在下一次记录中回填）。
+- GitHub Pages 部署结果：推送后验证，回填于下一次记录。
+- 尚未解决的问题：改版后移动端/桌面端截图待补（本地无无头浏览器，待线上后用云端浏览器截取或用户提供）；WebP（批次 2b）；feed.xml 星期错误；Lighthouse 未测。
+- 附带回填：批次 4 提交号 `b853c06ca099b42896bdaf1ff58b9373b4b34235`（style，含事故）→ 修复 `2b23299a523e1cae62a2cf06c18cc0cdf5756cc4` → 日志 `4d88427b257730f52406cbf9ba38d9561fce9c5c`，部署已验证，线上 style.css 三批规则齐全、页面 200。
+
 ### 批次 4（直接优化）— 手机顶栏对齐修复
 - 时间：2026-11-15 18:08（CST）。基线版本：main `17f514e`。
 - 任务名称：全面页面优化批次 4（移动端顶栏布局）。
@@ -14,8 +31,8 @@ Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时
 - 修复方案：追加式 CSS，利用 flex 的 margin-left:auto 推齐右边缘，不动 HTML 结构、不动 JS。
 - 测试环境及结果：CSS 大括号配平校验通过；本地静态服务器实测首页 200、样式加载正常。手机真实视觉效果需用户在 iPhone 上刷新后确认（部署后回填）。
 - 是否影响其他页面：style.css 全站共用；语言按钮只在首页有，guide/ielts/文章页顶栏结构不同、不受 margin 规则影响（已核对这几页没有 .lang-menu）。
-- GitHub Commit：本条目随本次修改同批推送（连接器逐文件提交，提交号在下一次记录中回填）。
-- GitHub Pages 部署结果：推送后验证，回填于下一次记录。
+- GitHub Commit：`b853c06ca099b42896bdaf1ff58b9373b4b34235` → 修复 `2b23299a523e1cae62a2cf06c18cc0cdf5756cc4` → 本日志 `4d88427b257730f52406cbf9ba38d9561fce9c5c`（回填于批次 5 记录）。
+- GitHub Pages 部署结果：已验证成功 — 线上 style.css 含批次 4 规则（详见批次 5 记录的附带回填）。
 - 事故与修复（如实记录）：本批第一次推送 style.css 时误用了批次 3 之前的旧版底稿，提交 `b853c06ca099b42896bdaf1ff58b9373b4b34235` 一度覆盖掉批次 3 的焦点环与两个断点规则；发现后立即以完整文件（批次 3 + 批次 4）修复，修复提交 `2b23299a523e1cae62a2cf06c18cc0cdf5756cc4`，线上复验三批规则齐全后才推送本日志。
 - 尚未解决的问题：WebP（批次 2b）；feed.xml 星期错误；Lighthouse 未测；平板/大屏真实设备视觉未确认。
 - 附带回填：批次 3 提交号 `ce5b2ea8d3f8c184a0a80f088aae7be783818703`（style.css）与 `17f514e9253df8c37b9f97b97a0751fddc678192`（本日志），部署已验证 — 线上 style.css 含 :focus-visible 与两个新断点，页面均 200。
