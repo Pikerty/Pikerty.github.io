@@ -2,6 +2,22 @@
 
 Pikerty 的个人博客 https://Pikerty.github.io 的全部修改记录，按时间倒序。每次改动推到 GitHub 后都会在这里补一条。
 
+## 2026-11-15
+
+### 批次 1（直接优化）— 全站 favicon、SEO 基础件、文章页 description
+- 时间：2026-11-15 14:10–14:20（CST）。基线版本：main `7f88f0b`（2026-11-06）。
+- 任务名称：全面页面优化批次 1（favicon + SEO 基础）。
+- 修改原因：阶段 0 审计确认全站缺 favicon、缺 sitemap/robots/canonical/Open Graph，搜索引擎无法正确收录，浏览器标签页没有站点图标。
+- 修改前存在的问题：7 个页面均无 `<link rel="icon">`；sitemap.xml 与 robots.txt 线上 404；无 canonical、无 OG/Twitter Card；4 篇文章页无 meta description。
+- 实际修改内容：新增 favicon.svg（P 字标，深底浅字，与站名文字标一致）；7 个页面 `<head>` 统一加 favicon、canonical、OG（type/site_name/title/description/url/image）与 twitter:card；4 篇文章页按正文实写补 meta description（未编造内容）；新建 sitemap.xml（7 条真实页面 URL，lastmod 2026-11-15）与 robots.txt（全站允许 + Sitemap 声明）。
+- 涉及文件：favicon.svg、sitemap.xml、robots.txt、index.html、guide.html、ielts.html、posts/ai-romance.html、posts/ielts-day4.html、posts/travel-video.html、posts/whv.html、CHANGELOG.md。
+- 修复方案：只增不改 — 只在 `<head>` 插入新标签，不动正文、样式与脚本；OG 图片使用各页已有的真实配图。
+- 测试环境及结果：本地克隆（HEAD 与线上一致）修改后用本地静态服务器实测，7 个页面与 3 个新文件均返回 200；逐页核对 icon/canonical/OG 计数各 1；sitemap.xml 通过 XML 解析；结果以推送后线上复验为准，未在线上复验前不记为部署成功。
+- 是否影响其他页面：`<head>` 之外零改动，页面正文与交互不受影响；script.js、style.css、feed.xml 本批次未动。
+- GitHub Commit：本条目随本次修改同一次提交推送，提交号按本文件既有做法在下一次记录中回填。
+- GitHub Pages 部署结果：推送后验证，回填于下一次记录。
+- 尚未解决的问题：图片无宽高与懒加载（批次 2）；CSS 仅 640px 单断点（批次 3）；feed.xml 星期错误；Lighthouse 未测。
+
 ## 2026-11-06
 
 ### `bd65ef8` — 科研筛选空状态：筛不到文章时给提示和一键重置
